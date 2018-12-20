@@ -9,7 +9,7 @@ export default class Navbar extends Component{
                 </div>
                 <div className="tabs" style={ tabsstyle } >
                     <ul style={{ display:'inline-flex' }}>
-                        <li style={ liststyle }><a href='#home' style={{ textDecoration:'none'}} ><h2>Home</h2></a></li>
+                        <li style={ liststyle }><a href='/' style={{ textDecoration:'none'}} ><h2>Home</h2></a></li>
                         <li style={ liststyle }><a href='#project' style={{ textDecoration:'none'}} ><h2>Project</h2></a></li>
                         <li style={ liststyle }><a href='#about' style={{ textDecoration:'none'}} ><h2>About</h2></a></li>
                     </ul>

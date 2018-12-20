@@ -1,22 +1,21 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component,Fragment } from 'react';
 
 import Navbar from './Navbar';
-import Hireform from './Hire';
+import Intro from './intro';
+import Footer from './Footer';
+import Projects from './Projects';
 
 class Index extends Component {
     render(){
         return(
-            <div className="App">
+            <Fragment>
                 <Navbar />
-                <Hireform env={this.props.env} />
-            </div>
+                <Intro />
+                <Projects />
+                <Footer />
+            </Fragment>
         );
     }
 }
-
-Index.propTypes = {
-    env: PropTypes.object.isRequired
-  };
 
 export default Index;

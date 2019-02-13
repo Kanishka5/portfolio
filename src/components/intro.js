@@ -11,17 +11,45 @@ export default class Intro extends Component {
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
           crossorigin="anonymous"
         />
+        <link
+          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:600,700"
+          rel="stylesheet"
+        />
+
         <div style={introtxtstyle}>
           <div className="introtxt">
-            <h1>
-              Hello, I’m <br /> Ron
+            <h1
+              style={{
+                fontFamily: "Playfair Display, serif",
+                fontWeight: 700,
+                fontSize: "3.5rem",
+                letterSpacing: "3.27px",
+                color: "#343a40"
+              }}
+            >
+              Hello, I’m <br /> <font color="#984cd5">Ron</font>
             </h1>
-            <p style={{ width: "100%" }}>
-              I’m a User Experience Designer who is obsessed with user-friendly
-              designs. I try to solve product problems using user-centred design
-              principles through solutions which have a meaningful impact. You
-              can find my latest works on Dribbble and Behance, and for regular
-              design posts follow my Instagram.
+            <p
+              style={{
+                width: "100%",
+                color: "#8c93bd",
+                fontFamily: "Open Sans, sans-serif",
+                fontWeight: 600,
+                fontSize: "1rem",
+                lineHeight: "22px"
+              }}
+            >
+              I’m a User Experience Designer who is <b>obsessed</b> with
+              user-friendly designs. I try to solve product problems using
+              user-centred design principles through solutions which have a
+              meaningful impact. You can find my latest works on{" "}
+              <font color="#984cd5">Dribbble</font>
+              and <font color="#984cd5">Behance</font>, and for regular design
+              posts follow my <font color="#984cd5">Instagram</font>.
             </p>
           </div>
         </div>
@@ -59,12 +87,13 @@ const introstyle = {
 };
 
 const introtxtstyle = {
-  width: "27.3%",
+  width: "24.3%",
   fontSize: "1.2rem",
-  marginLeft: "10.7%",
+  marginLeft: "15.7%",
   position: "relative",
   left: "6.3%",
-  top: "12vh"
+  top: "20vh",
+  lineHeight: "22px"
 };
 
 const btnstyle = {

@@ -1,27 +1,32 @@
 import React, { Component } from "react";
+import hire from "../assets/images/hire-button.png";
 
 export default class Navbar extends Component {
   render() {
     return (
       <div className="navbar" style={navstyle}>
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
+          rel="stylesheet"
+        />
         <div className="logo" style={headerStyle}>
           <h1>LOGO </h1>
         </div>
         <nav className="navbar">
           <ul className="header_lists" style={tabsstyle}>
             <li style={liststyle}>
-              <a href="/" style={{ textDecoration: "none" }}>
-                <h2>HOME</h2>
+              <a href="/" style={{ textDecoration: "none", }}>
+                <h2 style={navitems}>HOME</h2>
               </a>
             </li>
             <li style={liststyle}>
               <a href="#project" style={{ textDecoration: "none" }}>
-                <h2>PROJECT</h2>
+                <h2 style={navitems}>PROJECT</h2>
               </a>
             </li>
             <li style={liststyle}>
               <a href="#about" style={{ textDecoration: "none" }}>
-                <h2>ABOUT</h2>
+                <h2 style={navitems}>ABOUT</h2>
               </a>
             </li>
             <li style={liststyle}>
@@ -30,7 +35,7 @@ export default class Navbar extends Component {
                 target="_top"
                 style={{ textDecoration: "none" }}
               >
-                <h2>HIRE ME</h2>
+                <img src={hire} />
               </a>
             </li>
           </ul>
@@ -40,14 +45,21 @@ export default class Navbar extends Component {
   }
 }
 
+const navitems = {
+  fontFamily: "Open Sans, sans-serif",
+  fontWeight: 600,
+  fontSize: "1rem",
+  letterSpacing: 0.93,
+  color: "black"
+};
+
 const navstyle = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-between",
   alignItems: "center",
-  height: "10vh",
   backgroundColor: "transparent",
-  paddingRight: "5%"
+  paddingRight: "14.6%"
 };
 
 const headerStyle = {
@@ -58,7 +70,7 @@ const headerStyle = {
 const tabsstyle = {
   display: "flex",
   flexDirection: "row",
-  alignItems: "flex-end",
+  alignItems: "center",
   JustifyContent: "space-between"
   // marginRight:'10%'
 };

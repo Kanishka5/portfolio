@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import icons1 from "../assets/images/icons-all-01-copy.png";
 import icons2 from "../assets/images/icons-all-01-copy-2.png";
 import icons3 from "../assets/images/icons-all-01-copy-3.png";
@@ -11,33 +11,85 @@ export default class Intro extends Component {
   render() {
     return (
       <div className="skills" style={coverstyle}>
+        <link
+          href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:700"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:600,700"
+          rel="stylesheet"
+        />
+        <div style={{ position: "relative", width: "100%" }}>
+          <div
+            style={{
+              position: "absolute",
+              width: "100%",
+              textAlign: "center",
+              top: "4.7vh"
+            }}
+          >
+            <p
+              style={{
+                letterSpacing: 16.4,
+                color: "rgba(52, 58, 64, 0.06)",
+                fontFamily: "Quattrocento Sans, sans-serif",
+                fontSize: "4.5rem"
+              }}
+            >
+              SKILLSETS
+            </p>
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              width: "100%",
+              textAlign: "center",
+              top: "7vh"
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "Playfair Display, serif",
+                fontWeight: 700,
+                fontSize: "2rem",
+                color: "#343a40"
+              }}
+            >
+              My Skillsets
+            </p>
+          </div>
+        </div>
         <Container>
-          <Row style={{ paddingTop:'20.8%'}}>
-            <Col style={ iconstyle }>
-              <img src={icons1} />{" "}
-              <p>User Research Methods</p>
+          <Row style={{ paddingTop: "20.8%" }}>
+            <Col style={iconstyle}>
+              <Image src={icons4} style={imagestyle} />{" "}
+              <p style={caption}>User Research Methods</p>
             </Col>
-            <Col style={ iconstyle }>
-              <img src={icons2} />{" "}
-              <p>User Centred Design Process</p>
+            <Col style={iconstyle}>
+              <Image src={icons2} style={imagestyle} />{" "}
+              <p style={caption}>User Centred Design Process</p>
             </Col>
-            <Col style={ iconstyle }>
-              <img src={icons3} />{" "}
-              <p>Error Analysis</p>
+            <Col style={iconstyle}>
+              <Image src={icons6} style={imagestyle} />{" "}
+              <p style={caption}>Error Analysis</p>
             </Col>
           </Row>
           <Row>
-            <Col style={ iconstyle }>
-              <img src={icons4} />{" "}
-              <p>Usability Testing</p>
+            <Col style={iconstyle}>
+              <Image src={icons3} style={imagestyle} />{" "}
+              <p style={caption}>Usability Testing</p>
             </Col>
-            <Col style={ iconstyle }>
-              <img src={icons5} />{" "}
-              <p>Illustration & Digital Art</p>
+            <Col style={iconstyle}>
+              <Image src={icons5} style={imagestyle} />{" "}
+              <p style={caption}>Illustration & Digital Art</p>
             </Col>
-            <Col style={ iconstyle }>
-              <img src={icons6} />{" "}
-              <p>User Interface design</p>
+            <Col style={iconstyle}>
+              <Image src={icons1} style={imagestyle} />{" "}
+              <p style={caption}>User Interface design</p>
             </Col>
           </Row>
         </Container>
@@ -45,6 +97,18 @@ export default class Intro extends Component {
     );
   }
 }
+
+const imagestyle = {
+  height: 213,
+  width: "auto"
+};
+
+const caption = {
+  fontFamily: "Open Sans, sans-serif",
+  fontWeight: 600,
+  fontSize: "1.125rem",
+  padding: "2rem 0"
+};
 
 const coverstyle = {
   width: "66%",
@@ -57,6 +121,6 @@ const coverstyle = {
 };
 
 const iconstyle = {
-    textAlign: 'center',
-    padding: '2rem',
-}
+  textAlign: "center",
+  padding: "2rem"
+};

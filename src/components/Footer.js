@@ -34,24 +34,24 @@ export default class Footer extends Component {
               marginTop: "10.7%"
             }}
           >
-            <ul style={{ display: "flex", justifyContent: "space-around" }}>
-              <li style={{ padding:'2rem 2rem 0px 2rem' }}>
-                <a>DRIBBLE</a>
+            <ul style={{ display: "flex", justifyContent: "space-around",padding:0,margin:0 }}>
+              <li style={{ padding:'2rem 2rem 2rem 0',listStyle:'none' }}>
+                <a style={{ color:'white'}}>DRIBBLE</a>
               </li>
-              <li style={{ padding:'2rem 2rem 0 2rem' }}>
-                <a>BEHANCE</a>
+              <li style={{ padding:'2rem 2rem 2rem 0',listStyle:'none' }}>
+                <a style={{ color:'white'}}>BEHANCE</a>
               </li>
-              <li style={{ padding:'2rem 2rem 0 2rem' }}>
-                <a>INSTAGRAM</a>
+              <li style={{ padding:'2rem 2rem 2rem 0',listStyle:'none' }}>
+                <a style={{ color:'white'}}>INSTAGRAM</a>
               </li>
-              <li style={{ padding:'2rem 2rem 0 2rem' }}>
-                <a>TWITTER</a>
+              <li style={{ padding:'2rem 2rem 2rem 0',listStyle:'none' }}>
+                <a style={{ color:'white'}}>TWITTER</a>
               </li>
-              <li style={{ padding:'2rem 2rem 0 2rem' }}>
-                <a>LINKEDIN</a>
+              <li style={{ padding:'2rem 2rem 2rem 0',listStyle:'none' }}>
+                <a style={{ color:'white'}}>LINKEDIN</a>
               </li>
-              <li style={{ padding:'2rem 2rem 0 2rem',paddingLeft:'10%' }}>
-                <p>MADE WITH 2019</p>
+              <li style={{ padding:'2rem 0 2rem 0',listStyle:'none',paddingLeft:'10%',width:'max-content' }}>
+                <p style={{ width:'max-content',color:'white' }}>MADE WITH 2019</p>
               </li>
             </ul>
           </div>

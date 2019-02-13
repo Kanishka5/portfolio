@@ -10,19 +10,71 @@ export default class Intro extends Component {
       <div
         style={{
           display: "flex",
-          marginLeft: 50,
-          marginRight: 50,
-          marginTop: "50vh"
+          flexDirection: "column",
+          // marginLeft: 50,
+          // marginRight: 50,
+          marginTop: "60vh",
+          marginBottom: "20vh"
         }}
       >
-        <Container>
+        <link
+          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+          rel="stylesheet"
+        />
+        <div style={{ position: "relative", width: "83%", left: "17%" }}>
+          <div
+            style={{
+              position: "absolute",
+              width: "100%",
+              textAlign: "left",
+              top: "4.7vh"
+            }}
+          >
+            <p
+              style={{
+                letterSpacing: 16.4,
+                color: "rgba(52, 58, 64, 0.06)",
+                fontFamily: "Quattrocento Sans, sans-serif",
+                fontSize: "4.5rem"
+              }}
+            >
+              PROJECTS
+            </p>
+          </div>
+          <div
+            style={{
+              position: "absolute",
+              width: "100%",
+              textAlign: "left",
+              top: "10vh"
+            }}
+          >
+            <p
+              style={{
+                fontFamily: "Playfair Display, serif",
+                fontWeight: 700,
+                fontSize: "2rem",
+                color: "#343a40"
+              }}
+            >
+              My Projects
+            </p>
+          </div>
+        </div>
+        <Container style={{ marginTop: "10vh" }}>
           <Row style={{ paddingTop: "10%" }}>
             <Col>
               <img src={project1} />{" "}
             </Col>
             <Col>
-              <h2>Eco Grocer App - UX Design Process</h2>
-              <p>
+              <h2 style={headStyle}>
+                Eco Grocer App - UX Design <br /> Process
+              </h2>
+              <p style={paraStyle}>
                 This project focuses on the design of an application which is
                 built to make the people of the United Kingdom aware of the
                 environmental impact of their dietary consumptions and help them
@@ -32,8 +84,10 @@ export default class Intro extends Component {
           </Row>
           <Row style={{ paddingTop: "10%" }}>
             <Col>
-              <h2>Kloh App Redesign - UI/UX Internship</h2>
-              <p>
+              <h2 style={headStyle}>
+                Kloh App Redesign - UI/UX <br /> Internship
+              </h2>
+              <p style={paraStyle}>
                 My work with Kloh - a startup based in Bengaluru, India, who
                 aims to organise events which enables people to meet offline,
                 involved the redesign of their android application with the
@@ -52,8 +106,10 @@ export default class Intro extends Component {
               <img src={project3} />{" "}
             </Col>
             <Col>
-              <h2>Knowdata App Design - UI Internship</h2>
-              <p>
+              <h2 style={headStyle}>
+                Knowdata App Design - UI <br /> Internship
+              </h2>
+              <p style={paraStyle}>
                 My work with Algebra Analytics - a startup based in Gurgaon,
                 India, which works on providing digital learning platform for
                 the high school and university students of India, was one of the
@@ -67,8 +123,8 @@ export default class Intro extends Component {
           </Row>
           <Row style={{ paddingTop: "10%" }}>
             <Col>
-              <h2>Kloh App Redesign - UI/UX Internship</h2>
-              <p>
+              <h2 style={headStyle}>Kloh App Redesign - UI/UX Internship</h2>
+              <p style={paraStyle}>
                 My work with Kloh - a startup based in Bengaluru, India, who
                 aims to organise events which enables people to meet offline,
                 involved the redesign of their android application with the
@@ -87,8 +143,8 @@ export default class Intro extends Component {
               <img src={project3} />{" "}
             </Col>
             <Col>
-              <h2>Knowdata App Design - UI Internship</h2>
-              <p>
+              <h2 style={headStyle}>Knowdata App Design - UI Internship</h2>
+              <p style={paraStyle}>
                 My work with Algebra Analytics - a startup based in Gurgaon,
                 India, which works on providing digital learning platform for
                 the high school and university students of India, was one of the
@@ -102,8 +158,8 @@ export default class Intro extends Component {
           </Row>
           <Row style={{ paddingTop: "10%" }}>
             <Col>
-              <h2>Kloh App Redesign - UI/UX Internship</h2>
-              <p>
+              <h2 style={headStyle}>Kloh App Redesign - UI/UX Internship</h2>
+              <p style={paraStyle}>
                 My work with Kloh - a startup based in Bengaluru, India, who
                 aims to organise events which enables people to meet offline,
                 involved the redesign of their android application with the
@@ -122,8 +178,8 @@ export default class Intro extends Component {
               <img src={project3} />{" "}
             </Col>
             <Col>
-              <h2>Knowdata App Design - UI Internship</h2>
-              <p>
+              <h2 style={headStyle}>Knowdata App Design - UI Internship</h2>
+              <p style={paraStyle}>
                 My work with Algebra Analytics - a startup based in Gurgaon,
                 India, which works on providing digital learning platform for
                 the high school and university students of India, was one of the
@@ -141,8 +197,16 @@ export default class Intro extends Component {
   }
 }
 
-const introtxtstyle = {
-  paddingLeft: "5vw",
-  paddingTop: 100,
-  fontSize: 20
+const paraStyle = {
+  fontFamily: "Open Sans, sans-serif",
+  fontWeight: 400,
+  fontSize: "1rem",
+  lineHeight: "28px",
+  maxWidth: "427px"
+};
+
+const headStyle = {
+  fontFamily: "Playfair Display, serif",
+  fontWeight: 700,
+  fontSize: "1.75rem"
 };

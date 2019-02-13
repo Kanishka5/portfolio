@@ -1,33 +1,87 @@
-import React,{Component} from 'react';
+import React, { Component } from "react";
+import landing_ilst from "../assets/images/artwork-landing-page-01.png";
 
 export default class Intro extends Component {
-    render(){
-        return(
-            <div style={{ display:'flex' }}>
-                <div style={ introtxtstyle }>
-                    <div className="introtxt" >
-                        <h1>Hi, people</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-
-                    </div>
-                    <button >
-                        <a href='/contact/'>Hire me</a>
-                    </button>
-                    
-                </div>
-                <div className="ilust1" style={{ paddingTop:100}}>
-                    <img style={{ height:500,width:400 }} src= "https://2o34683axl001lupaf2udyvl-wpengine.netdna-ssl.com/wp-content/uploads/SageGray_Edited_2018.jpg"/>
-                </div>
-            </div>
-
-        );
-    }
+  render() {
+    return (
+      <div className="intro" style={introstyle}>
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous"
+        />
+        <div style={introtxtstyle}>
+          <div className="introtxt">
+            <h1>
+              Hello, I’m <br /> Ron
+            </h1>
+            <p style={{ width: "100%" }}>
+              I’m a User Experience Designer who is obsessed with user-friendly
+              designs. I try to solve product problems using user-centred design
+              principles through solutions which have a meaningful impact. You
+              can find my latest works on Dribbble and Behance, and for regular
+              design posts follow my Instagram.
+            </p>
+          </div>
+        </div>
+        <div
+          style={{ width: "57.4%", marginRight: "3.6%", position: "relative" }}
+        >
+          <div className="ilust1" style={imgstyle_back}>
+            <img
+              alt="illustration"
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "contain",
+                opacity: 0.07,
+                mixBlendMode: "darken"
+              }}
+              src={landing_ilst}
+            />
+          </div>
+          <div className="ilust1" style={imgstyle_frnt}>
+            <img
+              alt="illustration"
+              style={{ height: "auto", width: "100%" }}
+              src={landing_ilst}
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
+
+const introstyle = {
+  display: "flex"
+};
 
 const introtxtstyle = {
-    paddingLeft:'18vw',
-    paddingTop:100,
-    marginRight:'5vw',
-    fontSize:20,
-}
+  width: "27.3%",
+  fontSize: "1.2rem",
+  marginLeft: "10.7%",
+  position: "relative",
+  left: "6.3%",
+  top: "12vh"
+};
+
+const btnstyle = {
+  padding: "0.5rem",
+  borderRadius: "0.3rem",
+  border: 0
+};
+
+const imgstyle_frnt = {
+  width: "75.3%",
+  position: "absolute",
+  right: "6.5%",
+  top: "6.4vh"
+};
+
+const imgstyle_back = {
+  width: "100%",
+  position: "absolute",
+  right: 0
+};

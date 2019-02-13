@@ -4,33 +4,47 @@ export default class Navbar extends Component{
     render(){
         return(
             <div className="navbar" style={ navstyle }>
-                <div className="logo" style= {{ display:'inline-flex'}}>
+                <div className="logo" style={headerStyle}>
                     <h1>LOGO </h1>
                 </div>
-                <div className="tabs" style={ tabsstyle } >
-                    <ul style={{ display:'inline-flex' }}>
-                        <li style={ liststyle }><a href='/' style={{ textDecoration:'none'}} ><h2>Home</h2></a></li>
-                        <li style={ liststyle }><a href='#project' style={{ textDecoration:'none'}} ><h2>Project</h2></a></li>
-                        <li style={ liststyle }><a href='#about' style={{ textDecoration:'none'}} ><h2>About</h2></a></li>
+                <nav className='navbar' >
+                    <ul className="header_lists" style={ tabsstyle }>
+                        <li style={ liststyle }><a href='/' style={{ textDecoration:'none'}} ><h2>HOME</h2></a></li>
+                        <li style={ liststyle }><a href='#project' style={{ textDecoration:'none'}} ><h2>PROJECT</h2></a></li>
+                        <li style={ liststyle }><a href='#about' style={{ textDecoration:'none'}} ><h2>ABOUT</h2></a></li>
+                        <li style={ liststyle }><a href='#about' style={{ textDecoration:'none'}} ><h2>HIRE ME</h2></a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         );
     }
 }
 
 const navstyle = {
-    display: 'block',
-    paddingLeft: '20px',
-    boxShadow: '5px 5px 10px #888888',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '10vh',
+    backgroundColor:'transparent',
+    paddingRight:'5%',
+}
+
+const headerStyle = {
+    display:'flex',
+    paddingLeft: '13%',
 }
 
 const tabsstyle = {
-    float:'right',
-    display:'inline-flex',
+    display:'flex',
+    flexDirection:'row',
+    alignItems:'flex-end',
+    JustifyContent:'space-between',
+    // marginRight:'10%'
 }
 
 const liststyle = {
-    display:'block',
-    paddingRight:20,
+    listStyle:'none',
+    marginLeft: '1.2rem',
+    marginRight: '1.2rem',
 }

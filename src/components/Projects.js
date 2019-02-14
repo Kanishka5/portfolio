@@ -13,6 +13,7 @@ import arhn17 from "../assets/images/arhn17.png";
 import arhn18 from "../assets/images/arhn18.png";
 import social1 from "../assets/images/social1.png";
 import social2 from "../assets/images/social2.png";
+import Fade from "react-reveal/Fade";
 
 const breakpoints = {
   desktop: 1040,
@@ -93,286 +94,325 @@ export default class Intro extends Component {
             marginTop: window.innerWidth > breakpoints.tablet ? "10vh" : "20vh"
           }}
         >
-          <Row style={{ paddingTop: "10vh" }}>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <img src={project1} style={imgStyle} />{" "}
-            </Col>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <Row>
-                <h2 style={headStyle}>
-                  Eco Grocer App - UX Design <br /> Process
-                </h2>
-                <p style={paraStyle}>
-                  This project focuses on the design of an application which is
-                  built to make the people of the United Kingdom aware of the
-                  environmental impact of their dietary consumptions and help
-                  them track and reduce their diet’s environmental impact.
-                </p>
-              </Row>
-              <Row
-                style={{ flexDirection: "column", justifyContent: "flex-end" }}
+          <Fade left>
+            <Row style={{ paddingTop: "10vh" }}>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
               >
-                <a>
-                  <img src={casestudy} />
-                </a>
-                <a>
-                  <img src={behance1} />
-                </a>
-              </Row>
-            </Col>
-          </Row>
-          <Row style={{ paddingTop: "10vh" }}>
-            <Col
-              xs={{ order: 12 }}
-              lg={{ order: 1 }}
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <Row>
-                <h2 style={headStyle}>
-                  Kloh App Redesign - UI/UX <br /> Internship
-                </h2>
-                <p style={paraStyle}>
-                  My work with Kloh - a startup based in Bengaluru, India, who
-                  aims to organise events which enables people to meet offline,
-                  involved the redesign of their android application with the
-                  incorporation of 5 new functionalities. My role involved user
-                  research, developing wireframes, rendering visual interfaces,
-                  rapid prototyping, usability testing, micro-interactions,
-                  design evaluation.
-                </p>
-              </Row>
-              <Row
-                style={{ flexDirection: "column", justifyContent: "flex-end" }}
+                <img src={project1} style={imgStyle} />{" "}
+              </Col>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
               >
-                <a>
-                  <img src={casestudy} />
-                </a>
-                <a>
-                  <img src={dribble} />
-                </a>
-              </Row>{" "}
-            </Col>
-            <Col
-              xs={{ order: 1 }}
-              lg={{ order: 12 }}
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <img src={project2} style={imgStyle} />{" "}
-            </Col>
-          </Row>
-          <Row style={{ paddingTop: "10vh" }}>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <img src={project3} style={imgStyle} />{" "}
-            </Col>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <Row>
-                \
-                <h2 style={headStyle}>
-                  Knowdata App Design - UI <br /> Internship
-                </h2>
-                <p style={paraStyle}>
-                  My work with Algebra Analytics - a startup based in Gurgaon,
-                  India, which works on providing digital learning platform for
-                  the high school and university students of India, was one of
-                  the full-project remote internships. The main project I worked
-                  on was the interface design of a digital learning application
-                  for android platform named as Knowdata. My role involved
-                  generating wireframes, rendering visual interfaces, rapid
-                  prototyping and usability testing.
-                </p>
-              </Row>
-              <Row
-                style={{ flexDirection: "column", justifyContent: "flex-end" }}
+                <Row>
+                  <h2 style={headStyle}>
+                    Eco Grocer App - UX Design <br /> Process
+                  </h2>
+                  <p style={paraStyle}>
+                    This project focuses on the design of an application which
+                    is built to make the people of the United Kingdom aware of
+                    the environmental impact of their dietary consumptions and
+                    help them track and reduce their diet’s environmental
+                    impact.
+                  </p>
+                </Row>
+                <Row
+                  style={{
+                    flexDirection: "column",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <a>
+                    <img src={casestudy} />
+                  </a>
+                  <a>
+                    <img src={behance1} />
+                  </a>
+                </Row>
+              </Col>
+            </Row>
+          </Fade>
+          <Fade right>
+            <Row style={{ paddingTop: "10vh" }}>
+              <Col
+                xs={{ order: 12 }}
+                lg={{ order: 1 }}
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
               >
-                <a>
-                  <img src={behance1} />
-                </a>
-              </Row>
-            </Col>
-          </Row>
-          <Row style={{ paddingTop: "10vh" }}>
-            <Col
-              xs={{ order: 12 }}
-              lg={{ order: 1 }}
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <Row>
-                <h2 style={headStyle}>Kloh App Redesign - UI/UX Internship</h2>
-                <p style={paraStyle}>
-                  My work with Kloh - a startup based in Bengaluru, India, who
-                  aims to organise events which enables people to meet offline,
-                  involved the redesign of their android application with the
-                  incorporation of 5 new functionalities. My role involved user
-                  research, developing wireframes, rendering visual interfaces,
-                  rapid prototyping, usability testing, micro-interactions,
-                  design evaluation.
-                </p>
-              </Row>
-              <Row
-                style={{ flexDirection: "column", justifyContent: "flex-end" }}
+                <Row>
+                  <h2 style={headStyle}>
+                    Kloh App Redesign - UI/UX <br /> Internship
+                  </h2>
+                  <p style={paraStyle}>
+                    My work with Kloh - a startup based in Bengaluru, India, who
+                    aims to organise events which enables people to meet
+                    offline, involved the redesign of their android application
+                    with the incorporation of 5 new functionalities. My role
+                    involved user research, developing wireframes, rendering
+                    visual interfaces, rapid prototyping, usability testing,
+                    micro-interactions, design evaluation.
+                  </p>
+                </Row>
+                <Row
+                  style={{
+                    flexDirection: "column",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <a>
+                    <img src={casestudy} />
+                  </a>
+                  <a>
+                    <img src={dribble} />
+                  </a>
+                </Row>{" "}
+              </Col>
+              <Col
+                xs={{ order: 1 }}
+                lg={{ order: 12 }}
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
               >
-                <a>
-                  <img src={behance1} />
-                </a>
-              </Row>
-            </Col>
-            <Col
-              xs={{ order: 1 }}
-              lg={{ order: 12 }}
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <img src={project2} style={imgStyle} />{" "}
-            </Col>
-          </Row>
-          <Row style={{ paddingTop: "10vh" }}>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <img src={project5} style={imgStyle} />{" "}
-            </Col>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <Row>
-                <h2 style={headStyle}>
-                  Visual Design Projects : <br /> Aarohan 2017 & 2018
-                </h2>
-                <p style={paraStyle}>
-                  As a part of the Web Design & Creative Team of NIT Durgapur,
-                  my responsibility was designing a wide range of visual
-                  projects involving posters, banners, flex, visiting cards for
-                  the annual festival of our college. I was also bestowed the
-                  responsibility of Head of the design team during 2017-18.
-                </p>
-              </Row>
-              <Row
-                style={{ flexDirection: "column", justifyContent: "flex-end" }}
+                <img src={project2} style={imgStyle} />{" "}
+              </Col>
+            </Row>
+          </Fade>
+          <Fade left>
+            <Row style={{ paddingTop: "10vh" }}>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
               >
-                <a>
-                  <img src={arhn17} />
-                </a>
-                <a>
-                  <img src={arhn18} />
-                </a>
-              </Row>{" "}
-            </Col>
-          </Row>
-          <Row style={{ paddingTop: "10vh" }}>
-            <Col
-              xs={{ order: 12 }}
-              lg={{ order: 1 }}
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <Row>
-                <h2 style={headStyle}>Website Design - Aarohan 18</h2>
-                <p style={paraStyle}>
-                  This project is about the design of website for a
-                  techno-management fest of NIT Durgapur, the theme for the year
-                  2018 being exploration of space through technological
-                  innovation based of Elon Musk’s Mars Mission. The entire
-                  design was based on the outer space and made interactive with
-                  a festive vibe & lively illustrations.
-                </p>
-              </Row>
-              <Row
-                style={{ flexDirection: "column", justifyContent: "flex-end" }}
+                <img src={project3} style={imgStyle} />{" "}
+              </Col>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
               >
-                <a>
-                  <img src={behance1} />
-                </a>
-              </Row>
-            </Col>
-            <Col
-              xs={{ order: 1 }}
-              lg={{ order: 12 }}
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <img src={project6} style={imgStyle} />{" "}
-            </Col>
-          </Row>
-          <Row style={{ paddingTop: "10vh" }}>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <img src={project7} style={imgStyle} />{" "}
-            </Col>
-            <Col
-              style={{
-                textAlign:
-                  window.innerWidth > breakpoints.tablet ? "auto" : "center"
-              }}
-            >
-              <Row>
-                <h2 style={headStyle}>
-                  Social Media Post Design <br />
-                  Project
-                </h2>
-                <p style={paraStyle}>
-                  This project puts up a bunch of creatives for Facebook and
-                  Instagram for several occasions. The posts are created from
-                  scratch to depict a creative way of designing social media
-                  posts.
-                </p>
-              </Row>
-              <Row
-                style={{ flexDirection: "column", justifyContent: "flex-end" }}
+                <Row>
+                  \
+                  <h2 style={headStyle}>
+                    Knowdata App Design - UI <br /> Internship
+                  </h2>
+                  <p style={paraStyle}>
+                    My work with Algebra Analytics - a startup based in Gurgaon,
+                    India, which works on providing digital learning platform
+                    for the high school and university students of India, was
+                    one of the full-project remote internships. The main project
+                    I worked on was the interface design of a digital learning
+                    application for android platform named as Knowdata. My role
+                    involved generating wireframes, rendering visual interfaces,
+                    rapid prototyping and usability testing.
+                  </p>
+                </Row>
+                <Row
+                  style={{
+                    flexDirection: "column",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <a>
+                    <img src={behance1} />
+                  </a>
+                </Row>
+              </Col>
+            </Row>
+          </Fade>
+          <Fade right>
+            <Row style={{ paddingTop: "10vh" }}>
+              <Col
+                xs={{ order: 12 }}
+                lg={{ order: 1 }}
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
               >
-                <a>
-                  <img src={social2} />
-                </a>
-                <a>
-                  <img src={social1} />
-                </a>
-              </Row>{" "}
-            </Col>
-          </Row>
+                <Row>
+                  <h2 style={headStyle}>
+                    Kloh App Redesign - UI/UX Internship
+                  </h2>
+                  <p style={paraStyle}>
+                    My work with Kloh - a startup based in Bengaluru, India, who
+                    aims to organise events which enables people to meet
+                    offline, involved the redesign of their android application
+                    with the incorporation of 5 new functionalities. My role
+                    involved user research, developing wireframes, rendering
+                    visual interfaces, rapid prototyping, usability testing,
+                    micro-interactions, design evaluation.
+                  </p>
+                </Row>
+                <Row
+                  style={{
+                    flexDirection: "column",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <a>
+                    <img src={behance1} />
+                  </a>
+                </Row>
+              </Col>
+              <Col
+                xs={{ order: 1 }}
+                lg={{ order: 12 }}
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
+              >
+                <img src={project2} style={imgStyle} />{" "}
+              </Col>
+            </Row>
+          </Fade>
+          <Fade left>
+            <Row style={{ paddingTop: "10vh" }}>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
+              >
+                <img src={project5} style={imgStyle} />{" "}
+              </Col>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
+              >
+                <Row>
+                  <h2 style={headStyle}>
+                    Visual Design Projects : <br /> Aarohan 2017 & 2018
+                  </h2>
+                  <p style={paraStyle}>
+                    As a part of the Web Design & Creative Team of NIT Durgapur,
+                    my responsibility was designing a wide range of visual
+                    projects involving posters, banners, flex, visiting cards
+                    for the annual festival of our college. I was also bestowed
+                    the responsibility of Head of the design team during
+                    2017-18.
+                  </p>
+                </Row>
+                <Row
+                  style={{
+                    flexDirection: "column",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <a>
+                    <img src={arhn17} />
+                  </a>
+                  <a>
+                    <img src={arhn18} />
+                  </a>
+                </Row>{" "}
+              </Col>
+            </Row>
+          </Fade>
+          <Fade right>
+            <Row style={{ paddingTop: "10vh" }}>
+              <Col
+                xs={{ order: 12 }}
+                lg={{ order: 1 }}
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
+              >
+                <Row>
+                  <h2 style={headStyle}>Website Design - Aarohan 18</h2>
+                  <p style={paraStyle}>
+                    This project is about the design of website for a
+                    techno-management fest of NIT Durgapur, the theme for the
+                    year 2018 being exploration of space through technological
+                    innovation based of Elon Musk’s Mars Mission. The entire
+                    design was based on the outer space and made interactive
+                    with a festive vibe & lively illustrations.
+                  </p>
+                </Row>
+                <Row
+                  style={{
+                    flexDirection: "column",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <a>
+                    <img src={behance1} />
+                  </a>
+                </Row>
+              </Col>
+              <Col
+                xs={{ order: 1 }}
+                lg={{ order: 12 }}
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
+              >
+                <img src={project6} style={imgStyle} />{" "}
+              </Col>
+            </Row>
+          </Fade>
+          <Fade left>
+            <Row style={{ paddingTop: "10vh" }}>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
+              >
+                <img src={project7} style={imgStyle} />{" "}
+              </Col>
+              <Col
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                }}
+              >
+                <Row>
+                  <h2 style={headStyle}>
+                    Social Media Post Design <br />
+                    Project
+                  </h2>
+                  <p style={paraStyle}>
+                    This project puts up a bunch of creatives for Facebook and
+                    Instagram for several occasions. The posts are created from
+                    scratch to depict a creative way of designing social media
+                    posts.
+                  </p>
+                </Row>
+                <Row
+                  style={{
+                    flexDirection: "column",
+                    justifyContent: "flex-end"
+                  }}
+                >
+                  <a>
+                    <img src={social2} />
+                  </a>
+                  <a>
+                    <img src={social1} />
+                  </a>
+                </Row>{" "}
+              </Col>
+            </Row>
+          </Fade>
         </Container>
       </div>
     );

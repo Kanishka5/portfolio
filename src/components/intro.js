@@ -46,7 +46,7 @@ export default class Intro extends Component {
                 fontFamily: "Open Sans, sans-serif",
                 fontWeight: 600,
                 fontSize: "1rem",
-                lineHeight: "22px"
+                lineHeight: "1.5rem"
               }}
             >
               I’m a User Experience Designer who is <b>obsessed</b> with

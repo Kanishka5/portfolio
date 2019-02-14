@@ -70,7 +70,7 @@ export default class Footer extends Component {
             visual design projects, I’ll be more than happy to work together!
           </p>
           <a
-            href="mailto:someone@example.com?Subject=Hello%20again"
+            href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
             target="_top"
           >
             <img src={btn} />
@@ -103,7 +103,9 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a style={linkStyle}>DRIBBLE</a>
+                <a href="https://dribbble.com/drifted_galaxy" style={linkStyle}>
+                  DRIBBLE
+                </a>
               </li>
               <li
                 style={{
@@ -116,7 +118,9 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a style={linkStyle}>BEHANCE</a>
+                <a href="https://www.behance.net/Rounak0713" style={linkStyle}>
+                  BEHANCE
+                </a>
               </li>
               <li
                 style={{
@@ -129,7 +133,12 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a style={linkStyle}>INSTAGRAM</a>
+                <a
+                  href="https://www.instagram.com/drifted_galaxy"
+                  style={linkStyle}
+                >
+                  INSTAGRAM
+                </a>
               </li>
               <li
                 style={{
@@ -142,7 +151,9 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a style={linkStyle}>TWITTER</a>
+                <a href="https://twitter.com/Ronuxdesign" style={linkStyle}>
+                  TWITTER
+                </a>
               </li>
               <li
                 style={{
@@ -155,7 +166,12 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a style={linkStyle}>LINKEDIN</a>
+                <a
+                  href="https://www.linkedin.com/in/rounak-ghosh-53a21b136/"
+                  style={linkStyle}
+                >
+                  LINKEDIN
+                </a>
               </li>
               <li
                 style={{

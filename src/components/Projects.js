@@ -86,7 +86,7 @@ export default class Intro extends Component {
             marginTop: window.innerWidth > breakpoints.tablet ? "10vh" : "20vh"
           }}
         >
-          <Row style={{ paddingTop: "10%" }}>
+          <Row style={{ paddingTop: "10vh" }}>
             <Col
               style={{
                 textAlign:
@@ -112,8 +112,10 @@ export default class Intro extends Component {
               </p>
             </Col>
           </Row>
-          <Row style={{ paddingTop: "10%" }}>
+          <Row style={{ paddingTop: "10vh" }}>
             <Col
+              xs={{ order: 12 }}
+              lg={{ order: 1 }}
               style={{
                 textAlign:
                   window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -133,6 +135,8 @@ export default class Intro extends Component {
               </p>
             </Col>
             <Col
+              xs={{ order: 1 }}
+              lg={{ order: 12 }}
               style={{
                 textAlign:
                   window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -141,7 +145,7 @@ export default class Intro extends Component {
               <img src={project2} style={imgStyle} />{" "}
             </Col>
           </Row>
-          <Row style={{ paddingTop: "10%" }}>
+          <Row style={{ paddingTop: "10vh" }}>
             <Col
               style={{
                 textAlign:
@@ -171,8 +175,10 @@ export default class Intro extends Component {
               </p>
             </Col>
           </Row>
-          <Row style={{ paddingTop: "10%" }}>
+          <Row style={{ paddingTop: "10vh" }}>
             <Col
+              xs={{ order: 12 }}
+              lg={{ order: 1 }}
               style={{
                 textAlign:
                   window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -190,6 +196,8 @@ export default class Intro extends Component {
               </p>
             </Col>
             <Col
+              xs={{ order: 1 }}
+              lg={{ order: 12 }}
               style={{
                 textAlign:
                   window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -198,7 +206,7 @@ export default class Intro extends Component {
               <img src={project2} style={imgStyle} />{" "}
             </Col>
           </Row>
-          <Row style={{ paddingTop: "10%" }}>
+          <Row style={{ paddingTop: "10vh" }}>
             <Col
               style={{
                 textAlign:
@@ -214,7 +222,7 @@ export default class Intro extends Component {
               }}
             >
               <h2 style={headStyle}>
-                Visual Design Projects : <br/> Aarohan 2017 & 2018
+                Visual Design Projects : <br /> Aarohan 2017 & 2018
               </h2>
               <p style={paraStyle}>
                 As a part of the Web Design & Creative Team of NIT Durgapur, my
@@ -225,8 +233,10 @@ export default class Intro extends Component {
               </p>
             </Col>
           </Row>
-          <Row style={{ paddingTop: "10%" }}>
+          <Row style={{ paddingTop: "10vh" }}>
             <Col
+              xs={{ order: 12 }}
+              lg={{ order: 1 }}
               style={{
                 textAlign:
                   window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -243,6 +253,8 @@ export default class Intro extends Component {
               </p>
             </Col>
             <Col
+              xs={{ order: 1 }}
+              lg={{ order: 12 }}
               style={{
                 textAlign:
                   window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -251,7 +263,7 @@ export default class Intro extends Component {
               <img src={project6} style={imgStyle} />{" "}
             </Col>
           </Row>
-          <Row style={{ paddingTop: "10%" }}>
+          <Row style={{ paddingTop: "10vh" }}>
             <Col
               style={{
                 textAlign:

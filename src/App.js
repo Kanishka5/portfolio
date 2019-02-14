@@ -6,7 +6,7 @@ import BaseRouter from './Routes';
 class App extends Component {
   render() {
     return (
-      <div className="App" style={{ backgroundColor:'#f8f9fa'}}>
+      <div className="App" style={{ backgroundColor:'#f8f9fa',overflowX:"hidden"}}>
         <BaseRouter env={env} />
       </div>
     );

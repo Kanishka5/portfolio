@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import btn from "../assets/images/let-stalk-button.png";
 
+const breakpoints = {
+  desktop: 1040,
+  tablet: 840,
+  mobile: 540
+};
+
 export default class Footer extends Component {
   render() {
     return (
@@ -37,7 +43,9 @@ export default class Footer extends Component {
               fontFamily: "Playfair Display, serif",
               fontWeight: 700,
               fontSize: "3.5rem",
-              color: "white"
+              color: "white",
+              textAlign:
+                window.innerWidth > breakpoints.tablet ? "auto" : "center"
             }}
           >
             Let’s w<span style={{ color: "#fac564" }}>o</span>r
@@ -51,9 +59,10 @@ export default class Footer extends Component {
               fontSize: "1.5rem",
               letterSpacing: "0.5px",
               maxWidth: "791px",
-              width: "54.1vw",
+              width: window.innerWidth > breakpoints.tablet ? "54.1vw" : "auto",
               textAlign: "center",
-              color: "white"
+              color: "white",
+              padding: window.innerWidth > breakpoints.tablet ? 0 : "2vh"
             }}
           >
             If you’d like to talk about some exciting projects where you’d like
@@ -75,29 +84,83 @@ export default class Footer extends Component {
           >
             <ul
               style={{
-                display: "flex",
+                display:
+                  window.innerWidth > breakpoints.tablet ? "flex" : "block",
                 justifyContent: "space-around",
                 padding: 0,
-                margin: 0
+                margin: 0,
+                paddingTop: window.innerWidth > breakpoints.tablet ? 0 : "2rem"
               }}
             >
-              <li style={{ padding: "2rem 2rem 2rem 0", listStyle: "none" }}>
+              <li
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center",
+                  padding:
+                    window.innerWidth > breakpoints.tablet
+                      ? "2rem 2rem 2rem 0"
+                      : "2rem",
+                  listStyle: "none"
+                }}
+              >
                 <a style={linkStyle}>DRIBBLE</a>
               </li>
-              <li style={{ padding: "2rem 2rem 2rem 0", listStyle: "none" }}>
+              <li
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center",
+                  padding:
+                    window.innerWidth > breakpoints.tablet
+                      ? "2rem 2rem 2rem 0"
+                      : "2rem",
+                  listStyle: "none"
+                }}
+              >
                 <a style={linkStyle}>BEHANCE</a>
               </li>
-              <li style={{ padding: "2rem 2rem 2rem 0", listStyle: "none" }}>
+              <li
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center",
+                  padding:
+                    window.innerWidth > breakpoints.tablet
+                      ? "2rem 2rem 2rem 0"
+                      : "2rem",
+                  listStyle: "none"
+                }}
+              >
                 <a style={linkStyle}>INSTAGRAM</a>
               </li>
-              <li style={{ padding: "2rem 2rem 2rem 0", listStyle: "none" }}>
+              <li
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center",
+                  padding:
+                    window.innerWidth > breakpoints.tablet
+                      ? "2rem 2rem 2rem 0"
+                      : "2rem",
+                  listStyle: "none"
+                }}
+              >
                 <a style={linkStyle}>TWITTER</a>
               </li>
-              <li style={{ padding: "2rem 2rem 2rem 0", listStyle: "none" }}>
+              <li
+                style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center",
+                  padding:
+                    window.innerWidth > breakpoints.tablet
+                      ? "2rem 2rem 2rem 0"
+                      : "2rem",
+                  listStyle: "none"
+                }}
+              >
                 <a style={linkStyle}>LINKEDIN</a>
               </li>
               <li
                 style={{
+                  textAlign:
+                    window.innerWidth > breakpoints.tablet ? "auto" : "center",
                   padding: "2rem 0 2rem 0",
                   listStyle: "none",
                   paddingLeft: "10%",

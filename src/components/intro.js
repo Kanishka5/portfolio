@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import landing_ilst from "../assets/images/artwork-landing-page-01.png";
 
+const breakpoints = {
+  desktop: 1040,
+  tablet: 840,
+  mobile: 540
+};
+
 export default class Intro extends Component {
   render() {
     return (
@@ -87,9 +93,9 @@ const introstyle = {
 };
 
 const introtxtstyle = {
-  width: "24.3%",
+  width: window.innerWidth > breakpoints.tablet ? "24.3%" : "auto",
   fontSize: "1.2rem",
-  marginLeft: "15.7%",
+  marginLeft: window.innerWidth > breakpoints.tablet ? "15.7%" : 0,
   position: "relative",
   left: "6.3%",
   top: "20vh",
@@ -103,6 +109,7 @@ const btnstyle = {
 };
 
 const imgstyle_frnt = {
+  display: window.innerWidth > breakpoints.tablet ? "block" : "none",
   width: "75.3%",
   position: "absolute",
   right: "6.5%",
@@ -110,7 +117,8 @@ const imgstyle_frnt = {
 };
 
 const imgstyle_back = {
-  width: "100%",
+  width: window.innerWidth > breakpoints.tablet ? "100%" : "80vw",
+  top: window.innerWidth > breakpoints.tablet ? 0 : "10vh",
   position: "absolute",
   right: 0
 };

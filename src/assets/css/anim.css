@@ -1,0 +1,100 @@
+/* The animation code */
+@keyframes example1 {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes example2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes example3 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes example4 {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes example5 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes example6 {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+/* The element to apply the animation to */
+.anim1 {
+  animation-name: example1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.anim2 {
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.anim3 {
+  animation-name: example3;
+  animation-duration: 4s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+}
+
+.anim4 {
+  animation-name: example4;
+  animation-duration: 4s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+}
+
+.anim5 {
+  animation-name: example5;
+  animation-duration: 4s;
+  animation-delay: 16s;
+  animation-iteration-count: infinite;
+}
+
+.anim6 {
+  animation-name: example6;
+  animation-duration: 4s;
+  animation-delay: 20s;
+  animation-iteration-count: infinite;
+}

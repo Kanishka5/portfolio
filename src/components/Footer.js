@@ -104,8 +104,12 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a href="https://dribbble.com/drifted_galaxy" style={linkStyle}>
-                  DRIBBLE
+                <a
+                  target="_blank"
+                  href="https://dribbble.com/drifted_galaxy"
+                  style={linkStyle}
+                >
+                  DRIBBBLE
                 </a>
               </li>
               <li
@@ -119,7 +123,11 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a href="https://www.behance.net/Rounak0713" style={linkStyle}>
+                <a
+                  target="_blank"
+                  href="https://www.behance.net/Rounak0713"
+                  style={linkStyle}
+                >
                   BEHANCE
                 </a>
               </li>
@@ -135,6 +143,7 @@ export default class Footer extends Component {
                 }}
               >
                 <a
+                  target="_blank"
                   href="https://www.instagram.com/drifted_galaxy"
                   style={linkStyle}
                 >
@@ -152,7 +161,11 @@ export default class Footer extends Component {
                   listStyle: "none"
                 }}
               >
-                <a href="https://twitter.com/Ronuxdesign" style={linkStyle}>
+                <a
+                  target="_blank"
+                  href="https://twitter.com/Ronuxdesign"
+                  style={linkStyle}
+                >
                   TWITTER
                 </a>
               </li>
@@ -168,6 +181,7 @@ export default class Footer extends Component {
                 }}
               >
                 <a
+                  target="_blank"
                   href="https://www.linkedin.com/in/rounak-ghosh-53a21b136/"
                   style={linkStyle}
                 >

@@ -53,7 +53,7 @@ export default class Intro extends Component {
               user-friendly designs. I try to solve product problems using
               user-centred design principles through solutions which have a
               meaningful impact. You can find my latest works on{" "}
-              <font color="#984cd5">Dribbble</font>
+              <font color="#984cd5">Dribbble </font>
               and <font color="#984cd5">Behance</font>, and for regular design
               posts follow my <font color="#984cd5">Instagram</font>.
             </p>

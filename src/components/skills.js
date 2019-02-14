@@ -6,6 +6,8 @@ import icons3 from "../assets/images/icons-all-01-copy-3.png";
 import icons4 from "../assets/images/icons-all-01-copy-4.png";
 import icons5 from "../assets/images/icons-all-01-copy-5.png";
 import icons6 from "../assets/images/icons-all-01-copy-6.png";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
+import "../assets/css/anim.css";
 
 const breakpoints = {
   desktop: 1040,
@@ -74,29 +76,29 @@ export default class Intro extends Component {
         <Container>
           <Row style={{ paddingTop: "20.8%" }}>
             <Col style={iconstyle}>
-              <Image src={icons4} style={imagestyle} />{" "}
+              <Image className="anim1" src={icons4} style={imagestyle} />{" "}
               <p style={caption}>User Research Methods</p>
             </Col>
             <Col style={iconstyle}>
-              <Image src={icons2} style={imagestyle} />{" "}
+              <Image className="anim2" src={icons2} style={imagestyle} />{" "}
               <p style={caption}>User Centred Design Process</p>
             </Col>
             <Col style={iconstyle}>
-              <Image src={icons6} style={imagestyle} />{" "}
+              <Image className="anim3" src={icons6} style={imagestyle} />{" "}
               <p style={caption}>Error Analysis</p>
             </Col>
           </Row>
           <Row>
             <Col style={iconstyle}>
-              <Image src={icons3} style={imagestyle} />{" "}
+              <Image className="anim4" src={icons3} style={imagestyle} />{" "}
               <p style={caption}>Usability Testing</p>
             </Col>
             <Col style={iconstyle}>
-              <Image src={icons5} style={imagestyle} />{" "}
+              <Image className="anim5" src={icons5} style={imagestyle} />{" "}
               <p style={caption}>Illustration & Digital Art</p>
             </Col>
             <Col style={iconstyle}>
-              <Image src={icons1} style={imagestyle} />{" "}
+              <Image className="anim6" src={icons1} style={imagestyle} />{" "}
               <p style={caption}>User Interface design</p>
             </Col>
           </Row>

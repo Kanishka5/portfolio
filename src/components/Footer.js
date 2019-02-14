@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import btn from "../assets/images/let-stalk-button.png";
+import { FaHeart } from "react-icons/fa";
 
 const breakpoints = {
   desktop: 1040,
@@ -184,7 +185,7 @@ export default class Footer extends Component {
                 }}
               >
                 <p style={{ width: "max-content", color: "white" }}>
-                  MADE WITH 2019
+                  MADE WITH <FaHeart style={{ color: "red" }} /> 2019
                 </p>
               </li>
             </ul>

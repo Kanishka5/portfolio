@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
+import cv from "../assets/pdf/CV-18-19.pdf";
 import "../assets/css/nav.css";
 
 const breakpoints = {
@@ -75,8 +76,8 @@ export default class Navbar extends Component {
             </li>
             <li style={liststyle}>
               <a
-                href="../assets/pdf/CV-18-19.pdf"
-                download
+                href={cv}
+                download="Rounak_CV"
                 style={{ textDecoration: "none", color: "black" }}
               >
                 <h2 style={navitems}>MY CV</h2>
@@ -119,7 +120,7 @@ export default class Navbar extends Component {
               <a href="#"> PROJECT </a>
             </li>
             <li>
-              <a href="../assets/pdf/CV-18-19.pdf" download>
+              <a href={cv} download="Rounak_CV">
                 {" "}
                 MY CV{" "}
               </a>

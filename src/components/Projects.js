@@ -7,13 +7,13 @@ import project4 from "../assets/images/pregbuddy_cover.png";
 import project5 from "../assets/images/visual-cover.jpg";
 import project6 from "../assets/images/web-d-cover.png";
 import project7 from "../assets/images/media-image.png";
-import casestudy from "../assets/images/cast-study-button.png";
-import behance1 from "../assets/images/project-button.png";
-import dribble from "../assets/images/dribble.png";
-import arhn17 from "../assets/images/arhn17.png";
-import arhn18 from "../assets/images/arhn18.png";
-import social1 from "../assets/images/social1.png";
-import social2 from "../assets/images/social2.png";
+import casestudy from "../assets/images/case-study-button.png";
+import behance1 from "../assets/images/project-button@2x.png";
+import dribble from "../assets/images/dribbble@2x.png";
+import arhn17 from "../assets/images/arhn17@2x.png";
+import arhn18 from "../assets/images/arhn18@2x.png";
+import social1 from "../assets/images/social1@2x.png";
+import social2 from "../assets/images/social2@2x.png";
 import Fade from "react-reveal/Fade";
 
 const breakpoints = {
@@ -133,13 +133,13 @@ export default class Intro extends Component {
                     href="https://blog.prototypr.io/ecogrocer-app-an-ux-case-study-2e2a9dba5d8e"
                     target="_blank"
                   >
-                    <img src={casestudy} />
+                    <img src={casestudy} style={{ width: 210 }} />
                   </a>
                   <a
                     href="https://www.behance.net/gallery/73902753/GreenGrocer-an-UX-case-study-and-process-development"
                     target="_blank"
                   >
-                    <img src={behance1} />
+                    <img src={behance1} style={{ width: 260 }} />
                   </a>
                 </Row>
               </Col>
@@ -176,10 +176,10 @@ export default class Intro extends Component {
                   }}
                 >
                   <a>
-                    <img src={casestudy} />
+                    <img src={casestudy} style={{ width: 210 }} />
                   </a>
                   <a href="https://dribbble.com/drifted_galaxy" target="_blank">
-                    <img src={dribble} />
+                    <img src={dribble} style={{ width: 260 }} />
                   </a>
                 </Row>{" "}
               </Col>
@@ -212,7 +212,6 @@ export default class Intro extends Component {
                 }}
               >
                 <Row>
-                  \
                   <h2 style={headStyle}>
                     Knowdata App Design - UI <br /> Internship
                   </h2>
@@ -237,7 +236,7 @@ export default class Intro extends Component {
                     href="https://www.behance.net/gallery/56701585/Knowdata-education-app-User-Interface-Design"
                     target="_blank"
                   >
-                    <img src={behance1} />
+                    <img src={behance1} style={{ width: 260 }} />
                   </a>
                 </Row>
               </Col>
@@ -274,10 +273,10 @@ export default class Intro extends Component {
                   }}
                 >
                   <a
-                    href="https://www.behance.net/gallery/54156709/Screen-Redesign-UI-concept-Pregbuddy-app"
+                    href="https://www.behance.net/gallery/54118173/Weight-tracker-project-Pregbuddy-app-UI-concepts"
                     target="_blank"
                   >
-                    <img src={behance1} />
+                    <img src={behance1} style={{ width: 260 }} />
                   </a>
                 </Row>
               </Col>
@@ -328,11 +327,17 @@ export default class Intro extends Component {
                     justifyContent: "flex-end"
                   }}
                 >
-                  <a>
-                    <img src={arhn17} />
+                  <a
+                    href="https://www.behance.net/gallery/51355885/Aarohan-2017-Posters"
+                    target="_blank"
+                  >
+                    <img src={arhn17} style={{ width: 320 }} />
                   </a>
-                  <a>
-                    <img src={arhn18} />
+                  <a
+                    href="https://www.behance.net/gallery/63676451/AAROHAN-2018-POSTERS"
+                    target="_blank"
+                  >
+                    <img src={arhn18} style={{ width: 320 }} />
                   </a>
                 </Row>{" "}
               </Col>
@@ -369,7 +374,7 @@ export default class Intro extends Component {
                     href="https://www.behance.net/gallery/63648505/AAROHAN-2018-WEBSITE-DESIGN-DEVELOPMENT"
                     target="_blank"
                   >
-                    <img src={behance1} />
+                    <img src={behance1} style={{ width: 260 }} />
                   </a>
                 </Row>
               </Col>
@@ -419,11 +424,17 @@ export default class Intro extends Component {
                     justifyContent: "flex-end"
                   }}
                 >
-                  <a>
-                    <img src={social2} />
+                  <a
+                    href="https://www.behance.net/gallery/63686341/Social-media-posts-Vol-2"
+                    target="_blank"
+                  >
+                    <img src={social2} style={{ width: 320 }} />
                   </a>
-                  <a>
-                    <img src={social1} />
+                  <a
+                    href="https://www.behance.net/gallery/56745539/Social-media-posts-vol-1"
+                    target="_blank"
+                  >
+                    <img src={social1} style={{ width: 320 }} />
                   </a>
                 </Row>{" "}
               </Col>

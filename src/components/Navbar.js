@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import hire from "../assets/images/hire-button.png";
+import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
 import "../assets/css/nav.css";
 

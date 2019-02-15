@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import hire from "../assets/images/hire-button.png";
+import logo from "../assets/images/logo_mark-01.png";
 import "../assets/css/nav.css";
 
 const breakpoints = {
@@ -42,7 +43,13 @@ export default class Navbar extends Component {
           rel="stylesheet"
         />
         <div className="logo" style={headerStyle}>
-          <h1>LOGO </h1>
+          <img
+            src={logo}
+            style={{
+              height: "auto",
+              width: window.innerWidth > breakpoints.tablet ? "3.2vw" : "8.2vw"
+            }}
+          />
         </div>
         <nav
           className="navbar"
@@ -154,8 +161,8 @@ const navstyle = {
 };
 
 const headerStyle = {
-  display: "flex",
-  paddingLeft: "13%"
+  // display: "flex",
+  paddingLeft: window.innerWidth > breakpoints.tablet ? "20vw" : 0
 };
 
 const tabsstyle = {

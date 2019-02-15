@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import project1 from "../assets/images/ecogrocer-cover.png";
 import project2 from "../assets/images/kloh-cover.png";
 import project3 from "../assets/images/knowdata-cover.png";
+import project4 from "../assets/images/pregbuddy_cover.png";
 import project5 from "../assets/images/visual-cover.jpg";
 import project6 from "../assets/images/web-d-cover.png";
 import project7 from "../assets/images/media-image.png";
@@ -128,10 +129,16 @@ export default class Intro extends Component {
                     justifyContent: "flex-end"
                   }}
                 >
-                  <a>
+                  <a
+                    href="https://blog.prototypr.io/ecogrocer-app-an-ux-case-study-2e2a9dba5d8e"
+                    target="_blank"
+                  >
                     <img src={casestudy} />
                   </a>
-                  <a>
+                  <a
+                    href="https://www.behance.net/gallery/73902753/GreenGrocer-an-UX-case-study-and-process-development"
+                    target="_blank"
+                  >
                     <img src={behance1} />
                   </a>
                 </Row>
@@ -171,7 +178,7 @@ export default class Intro extends Component {
                   <a>
                     <img src={casestudy} />
                   </a>
-                  <a>
+                  <a href="https://dribbble.com/drifted_galaxy" target="_blank">
                     <img src={dribble} />
                   </a>
                 </Row>{" "}
@@ -226,7 +233,10 @@ export default class Intro extends Component {
                     justifyContent: "flex-end"
                   }}
                 >
-                  <a>
+                  <a
+                    href="https://www.behance.net/gallery/56701585/Knowdata-education-app-User-Interface-Design"
+                    target="_blank"
+                  >
                     <img src={behance1} />
                   </a>
                 </Row>
@@ -244,17 +254,17 @@ export default class Intro extends Component {
                 }}
               >
                 <Row>
-                  <h2 style={headStyle}>
-                    Kloh App Redesign - UI/UX Internship
-                  </h2>
+                  <h2 style={headStyle}>Pregbuddy App - UI Internship</h2>
                   <p style={paraStyle}>
-                    My work with Kloh - a startup based in Bengaluru, India, who
-                    aims to organise events which enables people to meet
-                    offline, involved the redesign of their android application
-                    with the incorporation of 5 new functionalities. My role
-                    involved user research, developing wireframes, rendering
-                    visual interfaces, rapid prototyping, usability testing,
-                    micro-interactions, design evaluation.
+                    The work with Pregbuddy - a large scale startup based in
+                    Bengaluru, India, which has a full-scale product providing
+                    aids for pregnant women across India. The project I worked
+                    on included redesign of some of the screens of their
+                    existing android application, and the development of
+                    wireframes for a weight-tracker project. My role involved
+                    illustration, visual design, interface design,
+                    microinteractions, wireframing, content structure and
+                    prototyping.
                   </p>
                 </Row>
                 <Row
@@ -263,7 +273,10 @@ export default class Intro extends Component {
                     justifyContent: "flex-end"
                   }}
                 >
-                  <a>
+                  <a
+                    href="https://www.behance.net/gallery/54156709/Screen-Redesign-UI-concept-Pregbuddy-app"
+                    target="_blank"
+                  >
                     <img src={behance1} />
                   </a>
                 </Row>
@@ -276,7 +289,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project2} style={imgStyle} />{" "}
+                <img src={project4} style={imgStyle} />{" "}
               </Col>
             </Row>
           </Fade>
@@ -352,7 +365,10 @@ export default class Intro extends Component {
                     justifyContent: "flex-end"
                   }}
                 >
-                  <a>
+                  <a
+                    href="https://www.behance.net/gallery/63648505/AAROHAN-2018-WEBSITE-DESIGN-DEVELOPMENT"
+                    target="_blank"
+                  >
                     <img src={behance1} />
                   </a>
                 </Row>
@@ -434,5 +450,5 @@ const headStyle = {
 };
 
 const imgStyle = {
-  width: window.innerWidth > breakpoints.tablet ? "auto" : "80vw"
+  width: window.innerWidth > breakpoints.tablet ? 470 : "80vw"
 };

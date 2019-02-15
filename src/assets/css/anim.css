@@ -1,10 +1,10 @@
 /* The animation code */
 @keyframes example1 {
   0% {
-    transform: scale(1);
+    transform: scale(1.1);
   }
   16% {
-    transform: scale(1.1);
+    transform: scale(1);
   }
   32%,
   100% {
@@ -16,10 +16,10 @@
   0% {
     transform: scale(1);
   }
-  32% {
+  16% {
     transform: scale(0.9);
   }
-  48%,
+  32%,
   100% {
     transform: scale(1);
   }
@@ -27,12 +27,12 @@
 
 @keyframes example3 {
   0% {
-    transform: translateX(0);
+    transform: rotate(0deg);
   }
-  48% {
+  32% {
     transform: rotate(20deg);
   }
-  64%,
+  48%,
   100% {
     transform: rotate(0deg);
   }
@@ -40,30 +40,27 @@
 
 @keyframes example4 {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
-  64% {
+  48% {
     transform: translateY(10px);
   }
-  72% {
+  56% {
     transform: translateY(-10px);
   }
-  80% {
+  64% {
     transform: translateY(0);
   }
 }
 
 @keyframes example5 {
   0% {
-    transform: translateX(0);
-  }
-  80% {
     transform: rotate(0);
   }
-  88% {
+  64% {
     transform: rotate(-20deg);
   }
-  96% {
+  80% {
     transform: rotate(0);
   }
 }
@@ -72,11 +69,14 @@
   0% {
     transform: translateX(0);
   }
-  90% {
+  80% {
     transform: translateX(10px);
   }
-  95% {
+  88% {
     transform: translateX(-10px);
+  }
+  96% {
+    transform: translateX(0);
   }
 }
 
@@ -90,34 +90,32 @@
 .anim2 {
   animation-name: example2;
   animation-duration: 4s;
-  animation-delay: 4s;
   animation-iteration-count: infinite;
 }
 
 .anim3 {
   animation-name: example3;
   animation-duration: 4s;
-  animation-delay: 8s;
   animation-iteration-count: infinite;
 }
 
 .anim4 {
   animation-name: example4;
   animation-duration: 4s;
-  animation-delay: 12s;
+
   animation-iteration-count: infinite;
 }
 
 .anim5 {
   animation-name: example5;
   animation-duration: 4s;
-  animation-delay: 16s;
+
   animation-iteration-count: infinite;
 }
 
 .anim6 {
   animation-name: example6;
   animation-duration: 4s;
-  animation-delay: 20s;
+
   animation-iteration-count: infinite;
 }

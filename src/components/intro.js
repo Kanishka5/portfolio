@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import landing_ilst from "../assets/images/artwork-landing-page-01.png";
+import landing_ilst from "../assets/images/artwork-landing-page-01@3x.png";
 
 const breakpoints = {
   desktop: 1040,

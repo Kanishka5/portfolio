@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
-import icons1 from "../assets/images/icons-all-01-copy.png";
-import icons2 from "../assets/images/icons-all-01-copy-2.png";
-import icons3 from "../assets/images/icons-all-01-copy-3.png";
-import icons4 from "../assets/images/icons-all-01-copy-4.png";
-import icons5 from "../assets/images/icons-all-01-copy-5.png";
-import icons6 from "../assets/images/icons-all-01-copy-6.png";
+import icons1 from "../assets/images/icons-all-01-copy@3x.png";
+import icons2 from "../assets/images/icons-all-01-copy-2@3x.png";
+import icons3 from "../assets/images/icons-all-01-copy-3@3x.png";
+import icons4 from "../assets/images/icons-all-01-copy-4@3x.png";
+import icons5 from "../assets/images/icons-all-01-copy-5@3x.png";
+import icons6 from "../assets/images/icons-all-01-copy-6@3x.png";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import "../assets/css/anim.css";
 

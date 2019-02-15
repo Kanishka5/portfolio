@@ -1,6 +1,6 @@
 /* The animation code */
 @keyframes example1 {
-  0% {
+  5% {
     transform: scale(1.1);
   }
   16% {

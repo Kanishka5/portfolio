@@ -57,7 +57,7 @@ export default class Footer extends Component {
               fontFamily: "Open Sans, sans-serif",
               fontWeight: 400,
               lineHeight: "34px",
-              fontSize: "1.5rem",
+              fontSize: "1.2rem",
               letterSpacing: "0.5px",
               maxWidth: "791px",
               width: window.innerWidth > breakpoints.tablet ? "54.1vw" : "auto",

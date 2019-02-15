@@ -47,7 +47,9 @@ export default class Navbar extends Component {
             src={logo}
             style={{
               height: "auto",
-              width: window.innerWidth > breakpoints.tablet ? "3.2vw" : "8.2vw"
+              width: window.innerWidth > breakpoints.tablet ? "2.7vw" : "8.2vw",
+              position: "absolute",
+              top: "2.7vh"
             }}
           />
         </div>
@@ -59,18 +61,25 @@ export default class Navbar extends Component {
         >
           <ul className="header_lists" style={tabsstyle}>
             <li style={liststyle}>
-              <a href="/" style={{ textDecoration: "none" }}>
+              <a href="/" style={{ textDecoration: "none", color: "#984cd5" }}>
                 <h2 style={navitems}>HOME</h2>
               </a>
             </li>
             <li style={liststyle}>
-              <a href="#project" style={{ textDecoration: "none" }}>
+              <a
+                href="#project"
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <h2 style={navitems}>PROJECT</h2>
               </a>
             </li>
             <li style={liststyle}>
-              <a href="#about" style={{ textDecoration: "none" }}>
-                <h2 style={navitems}>ABOUT</h2>
+              <a
+                href="../assets/pdf/CV-18-19.pdf"
+                download
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <h2 style={navitems}>MY CV</h2>
               </a>
             </li>
             <li style={liststyle}>
@@ -79,7 +88,7 @@ export default class Navbar extends Component {
                 target="_top"
                 style={{ textDecoration: "none" }}
               >
-                <img src={hire} style={{ width:130 }}/>
+                <img src={hire} style={{ width: "10vw" }} />
               </a>
             </li>
           </ul>
@@ -147,8 +156,7 @@ const navitems = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
   fontSize: "1rem",
-  letterSpacing: 0.93,
-  color: "black"
+  letterSpacing: 0.93
 };
 
 const navstyle = {

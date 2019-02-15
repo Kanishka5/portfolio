@@ -53,9 +53,30 @@ export default class Intro extends Component {
               user-friendly designs. I try to solve product problems using
               user-centred design principles through solutions which have a
               meaningful impact. You can find my latest works on{" "}
-              <font color="#984cd5">Dribbble </font>
-              and <font color="#984cd5">Behance</font>, and for regular design
-              posts follow my <font color="#984cd5">Instagram</font>.
+              <a
+                href=" https://dribbble.com/drifted_galaxy"
+                target="_blank"
+                style={{ textDecoration: "none", color: "#984cd5" }}
+              >
+                Dribbble{" "}
+              </a>
+              and{" "}
+              <a
+                href="https://www.behance.net/Rounak0713"
+                target="_blank"
+                style={{ textDecoration: "none", color: "#984cd5" }}
+              >
+                Behance
+              </a>
+              , and for regular design posts follow my{" "}
+              <a
+                href="https://www.instagram.com/drifted_galaxy"
+                target="_blank"
+                style={{ textDecoration: "none", color: "#984cd5" }}
+              >
+                Instagram
+              </a>
+              .
             </p>
           </div>
         </div>

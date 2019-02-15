@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import project1 from "../assets/images/ecogrocer-cover.png";
-import project2 from "../assets/images/kloh-cover.png";
+import project1 from "../assets/images/ecogrocer_cover.png";
+import project2 from "../assets/images/kloh_cover.png";
 import project3 from "../assets/images/knowdata-cover.png";
 import project4 from "../assets/images/pregbuddy_cover.png";
-import project5 from "../assets/images/visual-cover.jpg";
-import project6 from "../assets/images/web-d-cover.png";
-import project7 from "../assets/images/media-image.png";
+import project5 from "../assets/images/visual_cover.png";
+import project6 from "../assets/images/web_cover.png";
+import project7 from "../assets/images/media_image.png";
 import casestudy from "../assets/images/case-study-button.png";
 import behance1 from "../assets/images/project-button@2x.png";
 import dribble from "../assets/images/dribbble@2x.png";
@@ -100,6 +100,7 @@ export default class Intro extends Component {
             <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -108,6 +109,7 @@ export default class Intro extends Component {
               </Col>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -132,7 +134,7 @@ export default class Intro extends Component {
                         ? "absolute"
                         : "static",
                     left: "7vw",
-                    bottom: 0
+                    bottom: -27
                   }}
                 >
                   <a
@@ -194,7 +196,7 @@ export default class Intro extends Component {
                         ? "absolute"
                         : "static",
                     left: 0,
-                    bottom: 0
+                    bottom: -27
                   }}
                 >
                   <a>
@@ -221,6 +223,7 @@ export default class Intro extends Component {
             <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -229,6 +232,7 @@ export default class Intro extends Component {
               </Col>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -256,7 +260,7 @@ export default class Intro extends Component {
                         ? "absolute"
                         : "static",
                     left: "7vw",
-                    bottom: 0
+                    bottom: -27
                   }}
                 >
                   <a
@@ -308,7 +312,7 @@ export default class Intro extends Component {
                         ? "absolute"
                         : "static",
                     left: 0,
-                    bottom: 0
+                    bottom: -27
                   }}
                 >
                   <a
@@ -335,6 +339,7 @@ export default class Intro extends Component {
             <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -343,6 +348,7 @@ export default class Intro extends Component {
               </Col>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -368,7 +374,7 @@ export default class Intro extends Component {
                         ? "absolute"
                         : "static",
                     left: "7vw",
-                    bottom: 0
+                    bottom: -27
                   }}
                 >
                   <a
@@ -423,7 +429,7 @@ export default class Intro extends Component {
                         ? "absolute"
                         : "static",
                     left: 0,
-                    bottom: 0
+                    bottom: -27
                   }}
                 >
                   <a
@@ -450,6 +456,7 @@ export default class Intro extends Component {
             <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -458,6 +465,7 @@ export default class Intro extends Component {
               </Col>
               <Col
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -482,7 +490,7 @@ export default class Intro extends Component {
                         ? "absolute"
                         : "static",
                     left: "7vw",
-                    bottom: 0
+                    bottom: -27
                   }}
                 >
                   <a
@@ -513,24 +521,26 @@ const textdiv = {
 };
 
 const paraStyle2 = {
+  paddingTop:"1rem",
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 400,
-  fontSize: "1rem",
+  fontSize: "1.125rem",
   lineHeight: "28px",
   maxWidth: "90%"
 };
 
 const paraStyle1 = {
+  paddingTop:"1rem",
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 400,
-  fontSize: "1rem",
+  fontSize: "1.125rem",
   lineHeight: "28px"
 };
 
 const headStyle = {
   fontFamily: "Playfair Display, serif",
   fontWeight: 700,
-  fontSize: "1.75rem"
+  fontSize: "1.9rem"
 };
 
 const imgStyle = {

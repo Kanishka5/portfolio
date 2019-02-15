@@ -131,15 +131,15 @@ const btnstyle = {
 
 const imgstyle_frnt = {
   display: window.innerWidth > breakpoints.tablet ? "block" : "none",
-  width: "75.3%",
+  width:"75.3%",
   position: "absolute",
-  right: "6.5%",
-  top: "6.4vh"
+  right:"6.5%",
+  top:"6.4vh"
 };
 
 const imgstyle_back = {
-  width: window.innerWidth > breakpoints.tablet ? "100%" : "80vw",
-  top: window.innerWidth > breakpoints.tablet ? 0 : "10vh",
+  width: window.innerWidth > breakpoints.tablet ? "100%" : "126vw",
+  top: window.innerWidth > breakpoints.tablet ? 0 : "32vh",
   position: "absolute",
-  right: 0
+  right: window.innerWidth > breakpoints.tablet ?0:"-49vw",
 };

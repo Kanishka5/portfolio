@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import btn from "../assets/images/let-stalk-button.png";
+import btn from "../assets/images/let-stalk-button@2x.png";
 import { FaHeart } from "react-icons/fa";
 
 const breakpoints = {
@@ -33,7 +33,8 @@ export default class Footer extends Component {
             style={{
               fontFamily: "Open Sans, sans-serif",
               fontWeight: 400,
-              fontSize: "1.5rem",
+              fontSize: "1rem",
+              letterSpacing: 7,
               color: "#fac564"
             }}
           >
@@ -74,7 +75,7 @@ export default class Footer extends Component {
             href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
             target="_top"
           >
-            <img src={btn} />
+            <img src={btn} style={{ width:"15.3vw",paddingTop:"1rem" }}/>
           </a>
           <div
             style={{

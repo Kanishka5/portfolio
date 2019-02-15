@@ -110,19 +110,19 @@ export default class Navbar extends Component {
         >
           <ul id="menu">
             <li>
-              <a href="#"> ABOUT </a>
+              <a href="/" STYLE={{ color: "#984cd5" }}>
+                {" "}
+                HOME{" "}
+              </a>
             </li>
             <li>
-              <a href="#"> AAROHAN </a>
+              <a href="#"> PROJECT </a>
             </li>
             <li>
-              <a href="#"> CELLS </a>
-            </li>
-            <li>
-              <a href="#"> MEMBERS </a>
-            </li>
-            <li>
-              <a href="#"> CONTACT US </a>
+              <a href="../assets/pdf/CV-18-19.pdf" download>
+                {" "}
+                MY CV{" "}
+              </a>
             </li>
           </ul>
         </div>

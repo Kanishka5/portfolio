@@ -159,6 +159,7 @@
 
 .menuIcon.toggle .icon-bars::after {
   top: 10px;
+  color: #f8f9fa;
   transform: translate3d(0, -10px, 0) rotate(-270deg);
   transition-delay: 0.1s;
   transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -189,7 +190,6 @@
   top: 0;
   right: 0;
   z-index: 55;
-  padding-right: 15px;
   transform: translateX(-200%);
   width: 100vw;
   height: 100vh;
@@ -201,16 +201,18 @@
 .overlay-menu li {
   display: block;
   position: relative;
+  top: 10vh;
+  padding: 0;
 }
 
 .overlay-menu li a {
-  color: #343a3f;
+  color: #f8f9fa;
   display: block;
   font-size: 1.8em;
   letter-spacing: 4px;
   /*   opacity: 0; */
   padding: 10px 0;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;

@@ -127,7 +127,10 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    position: "absolute",
+                    position:
+                      window.innerWidth > breakpoints.tablet
+                        ? "absolute"
+                        : "static",
                     left: "7vw",
                     bottom: 0
                   }}
@@ -149,7 +152,11 @@ export default class Intro extends Component {
             </Row>
           </Fade>
           <Fade right>
-            <Row style={{ paddingTop: "15vh" }}>
+            <Row
+              style={{
+                paddingTop: "15vh"
+              }}
+            >
               <Col
                 xs={{ order: 12 }}
                 lg={{ order: 1 }}
@@ -158,7 +165,14 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <Row>
+                <Row
+                  style={{
+                    paddingLeft:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "7vw",
+                    textAlign:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "left"
+                  }}
+                >
                   <h2 style={headStyle}>
                     Kloh App Redesign - UI/UX <br /> Internship
                   </h2>
@@ -175,7 +189,10 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    position: "absolute",
+                    position:
+                      window.innerWidth > breakpoints.tablet
+                        ? "absolute"
+                        : "static",
                     left: 0,
                     bottom: 0
                   }}
@@ -234,7 +251,10 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    position: "absolute",
+                    position:
+                      window.innerWidth > breakpoints.tablet
+                        ? "absolute"
+                        : "static",
                     left: "7vw",
                     bottom: 0
                   }}
@@ -259,7 +279,14 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <Row>
+                <Row
+                  style={{
+                    paddingLeft:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "7vw",
+                    textAlign:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "left"
+                  }}
+                >
                   <h2 style={headStyle}>Pregbuddy App - UI Internship</h2>
                   <p style={paraStyle2}>
                     The work with Pregbuddy - a large scale startup based in
@@ -276,7 +303,10 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    position: "absolute",
+                    position:
+                      window.innerWidth > breakpoints.tablet
+                        ? "absolute"
+                        : "static",
                     left: 0,
                     bottom: 0
                   }}
@@ -333,7 +363,10 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    position: "absolute",
+                    position:
+                      window.innerWidth > breakpoints.tablet
+                        ? "absolute"
+                        : "static",
                     left: "7vw",
                     bottom: 0
                   }}
@@ -364,7 +397,14 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <Row>
+                <Row
+                  style={{
+                    paddingLeft:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "7vw",
+                    textAlign:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "left"
+                  }}
+                >
                   <h2 style={headStyle}>Website Design - Aarohan 18</h2>
                   <p style={paraStyle2}>
                     This project is about the design of website for a
@@ -378,7 +418,10 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    position: "absolute",
+                    position:
+                      window.innerWidth > breakpoints.tablet
+                        ? "absolute"
+                        : "static",
                     left: 0,
                     bottom: 0
                   }}
@@ -434,7 +477,10 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    position: "absolute",
+                    position:
+                      window.innerWidth > breakpoints.tablet
+                        ? "absolute"
+                        : "static",
                     left: "7vw",
                     bottom: 0
                   }}
@@ -462,7 +508,8 @@ export default class Intro extends Component {
 }
 
 const textdiv = {
-  paddingLeft: "7vw"
+  paddingLeft: "7vw",
+  textAlign: window.innerWidth > breakpoints.tablet ? "auto" : "left"
 };
 
 const paraStyle2 = {

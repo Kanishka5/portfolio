@@ -29,8 +29,8 @@ export default class Intro extends Component {
         style={{
           display: "flex",
           flexDirection: "column",
-          // marginLeft: 50,
-          // marginRight: 50,
+          width: window.innerWidth > breakpoints.tablet ? "66%" : "90%",
+          marginLeft: window.innerWidth > breakpoints.tablet ? "17%" : "5%",
           marginTop: window.innerWidth > breakpoints.tablet ? "60vh" : "35vh",
           marginBottom: "20vh"
         }}
@@ -46,8 +46,7 @@ export default class Intro extends Component {
         <div
           style={{
             position: "relative",
-            width: "83%",
-            left: window.innerWidth > breakpoints.tablet ? "17%" : "5%"
+            width: "83%"
           }}
         >
           <div
@@ -92,11 +91,13 @@ export default class Intro extends Component {
         </div>
         <Container
           style={{
-            marginTop: window.innerWidth > breakpoints.tablet ? "10vh" : "20vh"
+            marginTop: window.innerWidth > breakpoints.tablet ? "10vh" : "20vh",
+            Width: "83vw",
+            maxWidth: "100vw"
           }}
         >
           <Fade left>
-            <Row style={{ paddingTop: "10vh" }}>
+            <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
                   textAlign:
@@ -111,11 +112,11 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <Row>
+                <Row style={textdiv}>
                   <h2 style={headStyle}>
                     Eco Grocer App - UX Design <br /> Process
                   </h2>
-                  <p style={paraStyle}>
+                  <p style={paraStyle1}>
                     This project focuses on the design of an application which
                     is built to make the people of the United Kingdom aware of
                     the environmental impact of their dietary consumptions and
@@ -126,7 +127,9 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    justifyContent: "flex-end"
+                    position: "absolute",
+                    left: "7vw",
+                    bottom: 0
                   }}
                 >
                   <a
@@ -146,7 +149,7 @@ export default class Intro extends Component {
             </Row>
           </Fade>
           <Fade right>
-            <Row style={{ paddingTop: "10vh" }}>
+            <Row style={{ paddingTop: "15vh" }}>
               <Col
                 xs={{ order: 12 }}
                 lg={{ order: 1 }}
@@ -159,7 +162,7 @@ export default class Intro extends Component {
                   <h2 style={headStyle}>
                     Kloh App Redesign - UI/UX <br /> Internship
                   </h2>
-                  <p style={paraStyle}>
+                  <p style={paraStyle2}>
                     My work with Kloh - a startup based in Bengaluru, India, who
                     aims to organise events which enables people to meet
                     offline, involved the redesign of their android application
@@ -172,7 +175,9 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    justifyContent: "flex-end"
+                    position: "absolute",
+                    left: 0,
+                    bottom: 0
                   }}
                 >
                   <a>
@@ -196,7 +201,7 @@ export default class Intro extends Component {
             </Row>
           </Fade>
           <Fade left>
-            <Row style={{ paddingTop: "10vh" }}>
+            <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
                   textAlign:
@@ -211,11 +216,11 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <Row>
+                <Row style={textdiv}>
                   <h2 style={headStyle}>
                     Knowdata App Design - UI <br /> Internship
                   </h2>
-                  <p style={paraStyle}>
+                  <p style={paraStyle1}>
                     My work with Algebra Analytics - a startup based in Gurgaon,
                     India, which works on providing digital learning platform
                     for the high school and university students of India, was
@@ -229,7 +234,9 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    justifyContent: "flex-end"
+                    position: "absolute",
+                    left: "7vw",
+                    bottom: 0
                   }}
                 >
                   <a
@@ -243,7 +250,7 @@ export default class Intro extends Component {
             </Row>
           </Fade>
           <Fade right>
-            <Row style={{ paddingTop: "10vh" }}>
+            <Row style={{ paddingTop: "15vh" }}>
               <Col
                 xs={{ order: 12 }}
                 lg={{ order: 1 }}
@@ -254,7 +261,7 @@ export default class Intro extends Component {
               >
                 <Row>
                   <h2 style={headStyle}>Pregbuddy App - UI Internship</h2>
-                  <p style={paraStyle}>
+                  <p style={paraStyle2}>
                     The work with Pregbuddy - a large scale startup based in
                     Bengaluru, India, which has a full-scale product providing
                     aids for pregnant women across India. The project I worked
@@ -269,7 +276,9 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    justifyContent: "flex-end"
+                    position: "absolute",
+                    left: 0,
+                    bottom: 0
                   }}
                 >
                   <a
@@ -293,7 +302,7 @@ export default class Intro extends Component {
             </Row>
           </Fade>
           <Fade left>
-            <Row style={{ paddingTop: "10vh" }}>
+            <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
                   textAlign:
@@ -308,11 +317,11 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <Row>
+                <Row style={textdiv}>
                   <h2 style={headStyle}>
                     Visual Design Projects : <br /> Aarohan 2017 & 2018
                   </h2>
-                  <p style={paraStyle}>
+                  <p style={paraStyle1}>
                     As a part of the Web Design & Creative Team of NIT Durgapur,
                     my responsibility was designing a wide range of visual
                     projects involving posters, banners, flex, visiting cards
@@ -324,7 +333,9 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    justifyContent: "flex-end"
+                    position: "absolute",
+                    left: "7vw",
+                    bottom: 0
                   }}
                 >
                   <a
@@ -344,7 +355,7 @@ export default class Intro extends Component {
             </Row>
           </Fade>
           <Fade right>
-            <Row style={{ paddingTop: "10vh" }}>
+            <Row style={{ paddingTop: "15vh" }}>
               <Col
                 xs={{ order: 12 }}
                 lg={{ order: 1 }}
@@ -355,7 +366,7 @@ export default class Intro extends Component {
               >
                 <Row>
                   <h2 style={headStyle}>Website Design - Aarohan 18</h2>
-                  <p style={paraStyle}>
+                  <p style={paraStyle2}>
                     This project is about the design of website for a
                     techno-management fest of NIT Durgapur, the theme for the
                     year 2018 being exploration of space through technological
@@ -367,7 +378,9 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    justifyContent: "flex-end"
+                    position: "absolute",
+                    left: 0,
+                    bottom: 0
                   }}
                 >
                   <a
@@ -391,7 +404,7 @@ export default class Intro extends Component {
             </Row>
           </Fade>
           <Fade left>
-            <Row style={{ paddingTop: "10vh" }}>
+            <Row style={{ paddingTop: "15vh" }}>
               <Col
                 style={{
                   textAlign:
@@ -406,12 +419,12 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <Row>
+                <Row style={textdiv}>
                   <h2 style={headStyle}>
                     Social Media Post Design <br />
                     Project
                   </h2>
-                  <p style={paraStyle}>
+                  <p style={paraStyle1}>
                     This project puts up a bunch of creatives for Facebook and
                     Instagram for several occasions. The posts are created from
                     scratch to depict a creative way of designing social media
@@ -421,7 +434,9 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     flexDirection: "column",
-                    justifyContent: "flex-end"
+                    position: "absolute",
+                    left: "7vw",
+                    bottom: 0
                   }}
                 >
                   <a
@@ -446,12 +461,23 @@ export default class Intro extends Component {
   }
 }
 
-const paraStyle = {
+const textdiv = {
+  paddingLeft: "7vw"
+};
+
+const paraStyle2 = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 400,
   fontSize: "1rem",
   lineHeight: "28px",
-  maxWidth: "427px"
+  maxWidth: "90%"
+};
+
+const paraStyle1 = {
+  fontFamily: "Open Sans, sans-serif",
+  fontWeight: 400,
+  fontSize: "1rem",
+  lineHeight: "28px"
 };
 
 const headStyle = {
@@ -461,5 +487,5 @@ const headStyle = {
 };
 
 const imgStyle = {
-  width: window.innerWidth > breakpoints.tablet ? 470 : "80vw"
+  width: window.innerWidth > breakpoints.tablet ? "33.2vw" : "80vw"
 };

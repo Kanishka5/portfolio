@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="250" height="97" viewBox="0 0 250 97">
+    <defs>
+        <linearGradient id="c" x1="144.783%" x2="-19.63%" y1="-42.386%" y2="119.288%">
+            <stop offset="0%" stop-color="#FAC564"/>
+            <stop offset="100%" stop-color="#E75481"/>
+        </linearGradient>
+        <rect id="b" width="210" height="57" rx="28.5"/>
+        <filter id="a" width="132.9%" height="221.1%" x="-12.1%" y="-44.7%" filterUnits="objectBoundingBox">
+            <feOffset dx="9" dy="9" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.980392157 0 0 0 0 0.77254902 0 0 0 0 0.392156863 0 0 0 0.494933197 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(11 11)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="url(#c)" xlink:href="#b"/>
+        </g>
+        <text fill="#F8F9FA" font-family="OpenSans-Semibold, Open Sans" font-size="20" font-weight="500" letter-spacing=".417" transform="translate(11 11)">
+            <tspan x="44.052" y="36">CASE STUDY</tspan>
+        </text>
+    </g>
+</svg>

@@ -79,7 +79,7 @@ export default class Navbar extends Component {
                 target="_top"
                 style={{ textDecoration: "none" }}
               >
-                <img src={hire} />
+                <img src={hire} style={{ width:130 }}/>
               </a>
             </li>
           </ul>

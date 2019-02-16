@@ -119,6 +119,8 @@ export default class Navbar extends Component {
         <div
           className="overlay-menu"
           style={{
+            fontFamily: "Open Sans, sans-serif",
+            fontWeight: 600,
             display: window.innerWidth > breakpoints.tablet ? "none" : "block"
           }}
         >

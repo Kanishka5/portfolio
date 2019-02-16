@@ -45,8 +45,8 @@ export default class Intro extends Component {
                 color: "#8c93bd",
                 fontFamily: "Open Sans, sans-serif",
                 fontWeight: 600,
-                fontSize: window.innerWidth > breakpoints.tablet ? "1.1vw":"1rem",
-                lineHeight: window.innerWidth > breakpoints.tablet ? "1.8vw":"1.5rem"
+                fontSize: window.innerWidth > breakpoints.tablet ? "0.9vw":"1rem",
+                lineHeight: window.innerWidth > breakpoints.tablet ? "1.4vw":"1.5rem"
               }}
             >
               I’m a User Experience Designer who is <b>obsessed</b> with

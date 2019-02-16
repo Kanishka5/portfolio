@@ -449,6 +449,7 @@ export default class Intro extends Component {
                 xs={{ order: 1 }}
                 lg={{ order: 12 }}
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}

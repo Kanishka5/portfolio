@@ -377,7 +377,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet
                         ? "absolute"
                         : "static",
-                    left: "7vw",
+                    left: "5vw",
                     bottom: -27
                   }}
                 >

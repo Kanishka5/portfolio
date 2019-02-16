@@ -11,6 +11,22 @@ const breakpoints = {
 };
 
 export default class Navbar extends Component {
+  constructor() {
+    super();
+    this.state = {
+      fontSize:"1rem"
+    }
+  }
+  
+  mouseEnter() {
+      console.log('mouse enter')
+      this.setState({fontSize:"1.1rem"})
+  }
+  
+  mouseLeave() {
+      console.log('mouse leave')
+      this.setState({fontSize:"1rem"})
+  }
   componentDidMount() {
     let menuIcon = document.querySelector(".menuIcon");
     let nav = document.querySelector(".overlay-menu");
@@ -62,25 +78,22 @@ export default class Navbar extends Component {
         >
           <ul className="header_lists" style={tabsstyle}>
             <li style={liststyle}>
-              <a href="/" style={{ textDecoration: "none", color: "#984cd5" }}>
-                <h2 style={navitems}>HOME</h2>
+              <a  href="/" style={{ textDecoration:"none", color: "#984cd5" , }}>
+                <h2 style={navitems} >HOME</h2>
               </a>
             </li>
             <li style={liststyle}>
-              <a
-                href="#project"
-                style={{ textDecoration: "none", color: "black" }}
-              >
-                <h2 style={navitems}>PROJECT</h2>
+              <a href="#project" style={{ textDecoration:"none" , color: "black" }}>
+                <h2 style={navitems} className="itemhover" >PROJECT</h2>
               </a>
             </li>
             <li style={liststyle}>
               <a
                 href={cv}
                 download="Rounak_CV"
-                style={{ textDecoration: "none", color: "black" }}
+                style={{ textDecoration: "none", color: "black", }}
               >
-                <h2 style={navitems}>MY CV</h2>
+                <h2 style={navitems} className="itemhover" >MY CV</h2>
               </a>
             </li>
             <li style={liststyle}>
@@ -111,7 +124,7 @@ export default class Navbar extends Component {
         >
           <ul id="menu">
             <li>
-              <a href="/" STYLE={{ color: "#984cd5" }}>
+              <a href="/" style={{ color: "#984cd5" }}>
                 {" "}
                 HOME{" "}
               </a>
@@ -166,7 +179,7 @@ const navitems = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
   fontSize: "1rem",
-  letterSpacing: 0.93
+  letterSpacing: 0.93,
 };
 
 const navstyle = {
@@ -175,7 +188,8 @@ const navstyle = {
   justifyContent: "space-between",
   alignItems: "center",
   backgroundColor: "transparent",
-  paddingRight: "14.6%"
+  paddingRight: "14.6%",
+  
 };
 
 const headerStyle = {
@@ -194,5 +208,5 @@ const tabsstyle = {
 const liststyle = {
   listStyle: "none",
   marginLeft: "1.2rem",
-  marginRight: "1.2rem"
+  marginRight: "1.2rem",
 };

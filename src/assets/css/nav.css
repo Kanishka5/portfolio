@@ -1,3 +1,4 @@
+
 /* navbar mobile */
 
 .menuIcon {
@@ -225,4 +226,9 @@
   color: rgb(28, 121, 184);
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+}
+
+.itemhover:hover {
+  font-size: 1.5rem;
+  color: rgb(202, 162, 234);
 }

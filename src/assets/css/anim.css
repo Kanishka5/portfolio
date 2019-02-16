@@ -1,13 +1,12 @@
 /* The animation code */
 @keyframes example1 {
-  5% {
-    transform: scale(1.1);
-  }
-  16% {
+  0% {
     transform: scale(1);
   }
-  32%,
-  100% {
+  8.333% {
+    transform: scale(1.1);
+  }
+  16.666% {
     transform: scale(1);
   }
 }
@@ -16,11 +15,10 @@
   0% {
     transform: scale(1);
   }
-  16% {
+  8.333% {
     transform: scale(0.9);
   }
-  32%,
-  100% {
+  16.666% {
     transform: scale(1);
   }
 }
@@ -29,11 +27,10 @@
   0% {
     transform: rotate(0deg);
   }
-  32% {
-    transform: rotate(20deg);
+  8.333% {
+    transform: rotate(10deg);
   }
-  48%,
-  100% {
+  16.666% {
     transform: rotate(0deg);
   }
 }
@@ -42,26 +39,23 @@
   0% {
     transform: translateY(0);
   }
-  48% {
+  8.333% {
     transform: translateY(10px);
   }
-  56% {
-    transform: translateY(-10px);
-  }
-  64% {
+  16.666% {
     transform: translateY(0);
   }
 }
 
 @keyframes example5 {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
-  64% {
-    transform: rotate(-20deg);
+  8.333% {
+    transform: rotate(-10deg);
   }
-  80% {
-    transform: rotate(0);
+  16.666% {
+    transform: rotate(0deg);
   }
 }
 
@@ -69,53 +63,35 @@
   0% {
     transform: translateX(0);
   }
-  80% {
+  8.333% {
     transform: translateX(10px);
   }
-  88% {
-    transform: translateX(-10px);
-  }
-  96% {
+  16.666% {
     transform: translateX(0);
   }
 }
 
 /* The element to apply the animation to */
 .anim1 {
-  animation-name: example1;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: example1 18s infinite;
 }
 
 .anim2 {
-  animation-name: example2;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: example2 18s infinite 3s;
 }
 
 .anim3 {
-  animation-name: example3;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: example3 18s infinite 6s;
 }
 
 .anim4 {
-  animation-name: example4;
-  animation-duration: 4s;
-
-  animation-iteration-count: infinite;
+  animation: example4 18s infinite 9s;
 }
 
 .anim5 {
-  animation-name: example5;
-  animation-duration: 4s;
-
-  animation-iteration-count: infinite;
+  animation: example5 18s infinite 12s;
 }
 
 .anim6 {
-  animation-name: example6;
-  animation-duration: 4s;
-
-  animation-iteration-count: infinite;
+  animation: example6 18s infinite 15s;
 }

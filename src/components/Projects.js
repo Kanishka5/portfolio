@@ -105,7 +105,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project1} style={imgStyle} />{" "}
+                <img src={project1} style={imgStyleLeft} />{" "}
               </Col>
               <Col
                 style={{
@@ -133,7 +133,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet
                         ? "absolute"
                         : "static",
-                    left: "7vw",
+                    left: "3vw",
                     bottom: -27
                   }}
                 >
@@ -219,7 +219,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project2} style={imgStyle} />{" "}
+                <img src={project2} style={imgStyleRight} />{" "}
               </Col>
             </Row>
           </Fade>
@@ -232,7 +232,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project3} style={imgStyle} />{" "}
+                <img src={project3} style={imgStyleLeft} />{" "}
               </Col>
               <Col
                 style={{
@@ -263,7 +263,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet
                         ? "absolute"
                         : "static",
-                    left: "7vw",
+                    left: "3vw",
                     bottom: -27
                   }}
                 >
@@ -339,7 +339,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project4} style={imgStyle} />{" "}
+                <img src={project4} style={imgStyleRight} />{" "}
               </Col>
             </Row>
           </Fade>
@@ -352,7 +352,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project5} style={imgStyle} />{" "}
+                <img src={project5} style={imgStyleLeft} />{" "}
               </Col>
               <Col
                 style={{
@@ -381,7 +381,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet
                         ? "absolute"
                         : "static",
-                    left: "5vw",
+                    left: "3vw",
                     bottom: -27
                   }}
                 >
@@ -460,7 +460,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project6} style={imgStyle} />{" "}
+                <img src={project6} style={imgStyleRight} />{" "}
               </Col>
             </Row>
           </Fade>
@@ -473,7 +473,7 @@ export default class Intro extends Component {
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
               >
-                <img src={project7} style={imgStyle} />{" "}
+                <img src={project7} style={imgStyleLeft} />{" "}
               </Col>
               <Col
                 style={{
@@ -501,7 +501,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet
                         ? "absolute"
                         : "static",
-                    left: "7vw",
+                    left: "3vw",
                     bottom: -27
                   }}
                 >
@@ -528,7 +528,7 @@ export default class Intro extends Component {
 }
 
 const textdiv = {
-  paddingLeft: window.innerWidth > breakpoints.tablet ? "7vw" : "5vw",
+  paddingLeft: window.innerWidth > breakpoints.tablet ? "3vw" : "5vw",
   textAlign: window.innerWidth > breakpoints.tablet ? "auto" : "left"
 };
 
@@ -536,8 +536,8 @@ const paraStyle2 = {
   paddingTop: window.innerWidth > breakpoints.tablet ? "1rem" : "0.8rem",
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 400,
-  fontSize: window.innerWidth > breakpoints.tablet ? "1.15vw" : "1rem",
-  lineHeight: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.55rem",
+  fontSize: window.innerWidth > breakpoints.tablet ? "1.05vw" : "1rem",
+  lineHeight: window.innerWidth > breakpoints.tablet ? "1.7vw" : "1.55rem",
   maxWidth: "90%",
   color: "#4a4a4a"
 };
@@ -546,8 +546,8 @@ const paraStyle1 = {
   paddingTop: window.innerWidth > breakpoints.tablet ? "1rem" : "0.8rem",
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 400,
-  fontSize: window.innerWidth > breakpoints.tablet ? "1.15vw" : "1rem",
-  lineHeight: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.55rem",
+  fontSize: window.innerWidth > breakpoints.tablet ? "1.05vw" : "1rem",
+  lineHeight: window.innerWidth > breakpoints.tablet ? "1.7vw" : "1.55rem",
   maxWidth: window.innerWidth > breakpoints.tablet ? "auto" : "90%",
   color: "#4a4a4a"
 };
@@ -555,10 +555,15 @@ const paraStyle1 = {
 const headStyle = {
   fontFamily: "Playfair Display, serif",
   fontWeight: 700,
-  fontSize: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.5rem",
+  fontSize: window.innerWidth > breakpoints.tablet ? "1.7vw" : "1.5rem",
   paddingTop: window.innerWidth > breakpoints.tablet ? 0 : "2rem"
 };
 
-const imgStyle = {
-  width: window.innerWidth > breakpoints.tablet ? "33.2vw" : "90vw"
+const imgStyleLeft = {
+  width: window.innerWidth > breakpoints.tablet ? "27.2vw" : "90vw"
+};
+
+const imgStyleRight = {
+  width: window.innerWidth > breakpoints.tablet ? "27.2vw" : "90vw",
+  marginLeft: "6vw"
 };

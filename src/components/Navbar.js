@@ -78,8 +78,8 @@ export default class Navbar extends Component {
         >
           <ul className="header_lists" style={tabsstyle}>
             <li style={liststyle}>
-              <a  href="/" style={{ textDecoration:"none", color: "#984cd5" , }}>
-                <h2 style={navitems} >HOME</h2>
+              <a  href="/" style={{ textDecoration:"none",color: "#984cd5" , }}>
+                <h2 style={navitems} className="itemhover1" >HOME</h2>
               </a>
             </li>
             <li style={liststyle}>
@@ -178,7 +178,7 @@ const iconstyle = {
 const navitems = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
-  fontSize: "1rem",
+  // fontSize: "1rem",
   letterSpacing: 0.93,
 };
 

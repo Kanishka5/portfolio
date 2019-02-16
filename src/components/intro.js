@@ -32,7 +32,7 @@ export default class Intro extends Component {
               style={{
                 fontFamily: "Playfair Display, serif",
                 fontWeight: 700,
-                fontSize: "3.5rem",
+                fontSize: "3.1vw",
                 letterSpacing: "3.27px",
                 color: "#343a40"
               }}
@@ -45,8 +45,8 @@ export default class Intro extends Component {
                 color: "#8c93bd",
                 fontFamily: "Open Sans, sans-serif",
                 fontWeight: 600,
-                fontSize: "1rem",
-                lineHeight: "1.5rem"
+                fontSize: "1.1vw",
+                lineHeight: "1.8vw"
               }}
             >
               I’m a User Experience Designer who is <b>obsessed</b> with

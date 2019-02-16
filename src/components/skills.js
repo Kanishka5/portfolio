@@ -109,7 +109,7 @@ export default class Intro extends Component {
 }
 
 const imagestyle = {
-  height: "20vh",
+  height: "13vw",
   width: "auto"
 };
 

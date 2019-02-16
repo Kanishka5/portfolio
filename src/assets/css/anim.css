@@ -73,25 +73,25 @@
 
 /* The element to apply the animation to */
 .anim1 {
-  animation: example1 18s infinite;
+  animation: example1 6s ease-out infinite ;
 }
 
 .anim2 {
-  animation: example2 18s infinite 3s;
+  animation: example2 6s ease-out infinite 1s ;
 }
 
 .anim3 {
-  animation: example3 18s infinite 6s;
+  animation: example3 6s ease-out infinite 2s ;
 }
 
 .anim4 {
-  animation: example4 18s infinite 9s;
+  animation: example4 6s ease-out infinite 3s ;
 }
 
 .anim5 {
-  animation: example5 18s infinite 12s;
+  animation: example5 6s ease-out infinite 4s ;
 }
 
 .anim6 {
-  animation: example6 18s infinite 15s;
+  animation: example6 6s ease-out infinite 5s ;
 }

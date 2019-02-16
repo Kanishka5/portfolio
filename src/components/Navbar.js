@@ -125,6 +125,15 @@ export default class Navbar extends Component {
                 MY CV{" "}
               </a>
             </li>
+            <li style={liststyle}>
+              <a
+                href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
+                target="_top"
+                style={{ textDecoration: "none" }}
+              >
+                <img src={hire} style={{ width: "50vw" }} />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

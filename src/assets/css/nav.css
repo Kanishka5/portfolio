@@ -181,7 +181,7 @@
 }
 
 .overlay-menu {
-  background: #a670d8;
+  background: #cfb5e6;
   color: rgb(13, 26, 38);
   display: flex;
   align-items: center;
@@ -206,7 +206,7 @@
 }
 
 .overlay-menu li a {
-  color: #f8f9fa;
+  color: black;
   display: block;
   font-size: 1.8em;
   letter-spacing: 4px;

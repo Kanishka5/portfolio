@@ -75,7 +75,14 @@ export default class Footer extends Component {
             href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
             target="_top"
           >
-            <img src={btn} style={{ width:"15.3vw",paddingTop:"1rem" }}/>
+            <img
+              src={btn}
+              style={{
+                width:
+                  window.innerWidth > breakpoints.tablet ? "15.3vw" : "50vw",
+                paddingTop: "1rem"
+              }}
+            />
           </a>
           <div
             style={{

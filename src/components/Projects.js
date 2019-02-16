@@ -163,6 +163,7 @@ export default class Intro extends Component {
                 xs={{ order: 12 }}
                 lg={{ order: 1 }}
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -170,7 +171,7 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     paddingLeft:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "7vw",
+                      window.innerWidth > breakpoints.tablet ? "auto" : "5vw",
                     textAlign:
                       window.innerWidth > breakpoints.tablet ? "auto" : "left"
                   }}
@@ -211,6 +212,7 @@ export default class Intro extends Component {
                 xs={{ order: 1 }}
                 lg={{ order: 12 }}
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -279,6 +281,7 @@ export default class Intro extends Component {
                 xs={{ order: 12 }}
                 lg={{ order: 1 }}
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -286,7 +289,7 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     paddingLeft:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "7vw",
+                      window.innerWidth > breakpoints.tablet ? "auto" : "5vw",
                     textAlign:
                       window.innerWidth > breakpoints.tablet ? "auto" : "left"
                   }}
@@ -327,6 +330,7 @@ export default class Intro extends Component {
                 xs={{ order: 1 }}
                 lg={{ order: 12 }}
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -399,6 +403,7 @@ export default class Intro extends Component {
                 xs={{ order: 12 }}
                 lg={{ order: 1 }}
                 style={{
+                  padding: 0,
                   textAlign:
                     window.innerWidth > breakpoints.tablet ? "auto" : "center"
                 }}
@@ -406,7 +411,7 @@ export default class Intro extends Component {
                 <Row
                   style={{
                     paddingLeft:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "7vw",
+                      window.innerWidth > breakpoints.tablet ? "auto" : "5vw",
                     textAlign:
                       window.innerWidth > breakpoints.tablet ? "auto" : "left"
                   }}
@@ -516,35 +521,37 @@ export default class Intro extends Component {
 }
 
 const textdiv = {
-  paddingLeft: "7vw",
+  paddingLeft: window.innerWidth > breakpoints.tablet ? "7vw" : "5vw",
   textAlign: window.innerWidth > breakpoints.tablet ? "auto" : "left"
 };
 
 const paraStyle2 = {
-  paddingTop: "1rem",
+  paddingTop: window.innerWidth > breakpoints.tablet ? "1rem" : "0.8rem",
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 400,
-  fontSize: window.innerWidth > breakpoints.tablet ? "1.15vw" : "1.125rem",
-  lineHeight: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.75rem",
+  fontSize: window.innerWidth > breakpoints.tablet ? "1.15vw" : "1rem",
+  lineHeight: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.55rem",
   maxWidth: "90%",
   color: "#4a4a4a"
 };
 
 const paraStyle1 = {
-  paddingTop: "1rem",
+  paddingTop: window.innerWidth > breakpoints.tablet ? "1rem" : "0.8rem",
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 400,
-  fontSize: window.innerWidth > breakpoints.tablet ? "1.15vw" : "1.125rem",
-  lineHeight: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.75rem",
+  fontSize: window.innerWidth > breakpoints.tablet ? "1.15vw" : "1rem",
+  lineHeight: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.55rem",
+  maxWidth: window.innerWidth > breakpoints.tablet ? "auto" : "90%",
   color: "#4a4a4a"
 };
 
 const headStyle = {
   fontFamily: "Playfair Display, serif",
   fontWeight: 700,
-  fontSize: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.9rem"
+  fontSize: window.innerWidth > breakpoints.tablet ? "1.9vw" : "1.5rem",
+  paddingTop: window.innerWidth > breakpoints.tablet ? 0 : "2rem"
 };
 
 const imgStyle = {
-  width: window.innerWidth > breakpoints.tablet ? "33.2vw" : "80vw"
+  width: window.innerWidth > breakpoints.tablet ? "33.2vw" : "90vw"
 };

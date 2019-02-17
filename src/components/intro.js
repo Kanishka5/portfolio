@@ -118,7 +118,7 @@ const introtxtstyle = {
   fontSize: "1.2rem",
   marginLeft: window.innerWidth > breakpoints.tablet ? "15.7%" : 0,
   position: "relative",
-  left: "1.3%",
+  left: "1.2vw",
   top: "20vh",
   lineHeight: "22px"
 };

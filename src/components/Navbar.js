@@ -197,7 +197,7 @@ const navstyle = {
 
 const headerStyle = {
   // display: "flex",
-  paddingLeft: window.innerWidth > breakpoints.tablet ? "15vw" : 0
+  paddingLeft: window.innerWidth > breakpoints.tablet ? "15.3vw" : 0
 };
 
 const tabsstyle = {

@@ -118,7 +118,7 @@ const introtxtstyle = {
   fontSize: "1.2rem",
   marginLeft: window.innerWidth > breakpoints.tablet ? "15.7%" : 0,
   position: "relative",
-  left: "6.3%",
+  left: "1.3%",
   top: "20vh",
   lineHeight: "22px"
 };
@@ -133,7 +133,7 @@ const imgstyle_frnt = {
   display: window.innerWidth > breakpoints.tablet ? "block" : "none",
   width:"75.3%",
   position: "absolute",
-  right:"6.5%",
+  right:"6.5vw",
   top:"6.4vh"
 };
 
@@ -141,5 +141,5 @@ const imgstyle_back = {
   width: window.innerWidth > breakpoints.tablet ? "100%" : "126vw",
   top: window.innerWidth > breakpoints.tablet ? 0 : "32vh",
   position: "absolute",
-  right: window.innerWidth > breakpoints.tablet ?0:"-49vw",
+  right: window.innerWidth > breakpoints.tablet ?"3vw":"-49vw",
 };

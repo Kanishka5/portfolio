@@ -3,6 +3,7 @@ import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
 import cv from "../assets/pdf/CV-18-19.pdf";
 import "../assets/css/nav.css";
+import { FaBalanceScale } from "react-icons/fa";
 
 const breakpoints = {
   desktop: 1040,
@@ -66,7 +67,7 @@ export default class Navbar extends Component {
               height: "auto",
               width: window.innerWidth > breakpoints.tablet ? "2.7vw" : "8.2vw",
               position: "absolute",
-              top: "2.7vh"
+              top: "3.5vh"
             }}
           />
         </div>
@@ -102,7 +103,7 @@ export default class Navbar extends Component {
                 target="_top"
                 style={{ textDecoration: "none" }}
               >
-                <img src={hire} style={{ width: "10vw" }} />
+                <img src={hire} className="itemhover" style={{ width: "10vw" }} />
               </a>
             </li>
           </ul>
@@ -180,7 +181,7 @@ const iconstyle = {
 const navitems = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
-  // fontSize: "1rem",
+  fontSize: "1vw",
   letterSpacing: 0.93,
 };
 
@@ -196,7 +197,7 @@ const navstyle = {
 
 const headerStyle = {
   // display: "flex",
-  paddingLeft: window.innerWidth > breakpoints.tablet ? "20vw" : 0
+  paddingLeft: window.innerWidth > breakpoints.tablet ? "15vw" : 0
 };
 
 const tabsstyle = {

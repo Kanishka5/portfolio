@@ -206,7 +206,7 @@ export default class Footer extends Component {
                   width: "max-content"
                 }}
               >
-                <p style={{ width: "max-content", color: "white" }}>
+                <p style={{ width: "-moz-max-content",width: "max-content", color: "white" }}>
                   MADE WITH <FaHeart style={{ color: "red" }} /> 2019
                 </p>
               </li>

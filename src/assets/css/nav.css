@@ -233,7 +233,8 @@
 }
 
 .itemhover:hover {
-  font-size: 1.1rem;
+  transform: scale(1.05);
+  color: rgb(212, 172, 243);
   /* color: rgb(202, 162, 234); */
-  transition: font-size 0.3s ease;
+  transition: transform 0.3s ease;
 }

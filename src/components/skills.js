@@ -109,7 +109,7 @@ export default class Intro extends Component {
 }
 
 const imagestyle = {
-  height: window.innerWidth > breakpoints.tablet ? "13vw":"20vh",
+  height: window.innerWidth > breakpoints.tablet ? "17vh":"20vh",
   width: "auto"
 };
 

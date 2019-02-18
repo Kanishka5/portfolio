@@ -44,7 +44,7 @@ export default class Footer extends Component {
             style={{
               fontFamily: "Playfair Display, serif",
               fontWeight: 700,
-              fontSize: "3.3rem",
+              fontSize: "3.1vw",
               color: "white",
               textAlign:
                 window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -57,11 +57,11 @@ export default class Footer extends Component {
             style={{
               fontFamily: "Open Sans, sans-serif",
               fontWeight: 400,
-              lineHeight: "2rem",
-              fontSize: "1.4rem",
+              lineHeight: "1.7vw",
+              fontSize: "1.05vw",
               letterSpacing: "0.5px",
               maxWidth: "791px",
-              width: window.innerWidth > breakpoints.tablet ? "54.1vw" : "auto",
+              width: window.innerWidth > breakpoints.tablet ? "45.1vw" : "auto",
               textAlign: "center",
               color: "white",
               padding: window.innerWidth > breakpoints.tablet ? 0 : "2vh"

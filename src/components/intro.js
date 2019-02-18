@@ -32,7 +32,7 @@ export default class Intro extends Component {
               style={{
                 fontFamily: "Playfair Display, serif",
                 fontWeight: 700,
-                fontSize: window.innerWidth > breakpoints.tablet ? "3.1vw":"3.5rem",
+                fontSize: window.innerWidth > breakpoints.tablet ? "3.1vw":"2.5rem",
                 letterSpacing: "3.27px",
                 color: "#343a40"
               }}
@@ -118,7 +118,7 @@ const introtxtstyle = {
   fontSize: "1.2rem",
   marginLeft: window.innerWidth > breakpoints.tablet ? "15.7%" : 0,
   position: "relative",
-  left: "1.2vw",
+  left:  window.innerWidth > breakpoints.tablet ?"1.2vw":"5vw",
   top: "20vh",
   lineHeight: "22px"
 };
@@ -139,7 +139,7 @@ const imgstyle_frnt = {
 
 const imgstyle_back = {
   width: window.innerWidth > breakpoints.tablet ? "100%" : "126vw",
-  top: window.innerWidth > breakpoints.tablet ? 0 : "32vh",
+  top: window.innerWidth > breakpoints.tablet ? 0 : "24vh",
   position: "absolute",
   right: window.innerWidth > breakpoints.tablet ?"3vw":"-49vw",
 };

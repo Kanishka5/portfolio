@@ -44,7 +44,7 @@ export default class Footer extends Component {
             style={{
               fontFamily: "Playfair Display, serif",
               fontWeight: 700,
-              fontSize: "3.5rem",
+              fontSize: "3.3rem",
               color: "white",
               textAlign:
                 window.innerWidth > breakpoints.tablet ? "auto" : "center"
@@ -57,8 +57,8 @@ export default class Footer extends Component {
             style={{
               fontFamily: "Open Sans, sans-serif",
               fontWeight: 400,
-              lineHeight: "34px",
-              fontSize: "1.2rem",
+              lineHeight: "2rem",
+              fontSize: "1.4rem",
               letterSpacing: "0.5px",
               maxWidth: "791px",
               width: window.innerWidth > breakpoints.tablet ? "54.1vw" : "auto",
@@ -72,10 +72,12 @@ export default class Footer extends Component {
             visual design projects, I’ll be more than happy to work together!
           </p>
           <a
+            className="footerlink"
             href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
             target="_top"
           >
             <img
+              className="itemhover"
               src={btn}
               style={{
                 width:
@@ -113,6 +115,7 @@ export default class Footer extends Component {
                 }}
               >
                 <a
+                  className="footerlink"
                   target="_blank"
                   href="https://dribbble.com/drifted_galaxy"
                   style={linkStyle}
@@ -132,6 +135,7 @@ export default class Footer extends Component {
                 }}
               >
                 <a
+                  className="footerlink"
                   target="_blank"
                   href="https://www.behance.net/Rounak0713"
                   style={linkStyle}
@@ -151,6 +155,7 @@ export default class Footer extends Component {
                 }}
               >
                 <a
+                  className="footerlink"
                   target="_blank"
                   href="https://www.instagram.com/drifted_galaxy"
                   style={linkStyle}
@@ -170,6 +175,7 @@ export default class Footer extends Component {
                 }}
               >
                 <a
+                  className="footerlink"
                   target="_blank"
                   href="https://twitter.com/Ronuxdesign"
                   style={linkStyle}
@@ -189,6 +195,7 @@ export default class Footer extends Component {
                 }}
               >
                 <a
+                  className="footerlink"
                   target="_blank"
                   href="https://www.linkedin.com/in/rounak-ghosh-53a21b136/"
                   style={linkStyle}
@@ -206,7 +213,13 @@ export default class Footer extends Component {
                   width: "max-content"
                 }}
               >
-                <p style={{ width: "-moz-max-content",width: "max-content", color: "white" }}>
+                <p
+                  style={{
+                    width: "-moz-max-content",
+                    width: "max-content",
+                    color: "white"
+                  }}
+                >
                   MADE WITH <FaHeart style={{ color: "red" }} /> 2019
                 </p>
               </li>
@@ -224,7 +237,8 @@ const linkStyle = {
   fontSize: "0.875rem",
   letterSpacing: "0.58px",
   opacity: 0.85,
-  color: "white"
+  // color: "white",
+  textDecoration: "none"
 };
 
 const footerstyle = {

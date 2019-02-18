@@ -142,7 +142,7 @@ export default class Intro extends Component {
                     target="_blank"
                   >
                     <img
-                    className="itemhover"
+                      className="itemhover"
                       src={casestudy}
                       style={{
                         width:
@@ -218,7 +218,7 @@ export default class Intro extends Component {
                     bottom: "-1.8vw"
                   }}
                 >
-                  <a>
+                  {/* <a>
                     <img
                       src={casestudy}
                       style={{
@@ -228,9 +228,16 @@ export default class Intro extends Component {
                             : 192
                       }}
                     />
-                  </a>
+                  </a> */}
                   <a href="https://dribbble.com/drifted_galaxy" target="_blank">
-                    <img className="itemhover" src={dribble} style={{ width: "16vw" }} />
+                    <img
+                      className="itemhover"
+                      src={dribble}
+                      style={{
+                        width:
+                          window.innerWidth > breakpoints.tablet ? "16vw" : 260
+                      }}
+                    />
                   </a>
                 </Row>{" "}
               </Col>
@@ -432,7 +439,7 @@ export default class Intro extends Component {
                     target="_blank"
                   >
                     <img
-                    className="itemhover"
+                      className="itemhover"
                       src={arhn17}
                       style={{
                         width:
@@ -445,7 +452,7 @@ export default class Intro extends Component {
                     target="_blank"
                   >
                     <img
-                    className="itemhover"
+                      className="itemhover"
                       src={arhn18}
                       style={{
                         width:
@@ -575,7 +582,7 @@ export default class Intro extends Component {
                     target="_blank"
                   >
                     <img
-                    className="itemhover"
+                      className="itemhover"
                       src={social2}
                       style={{
                         width:
@@ -588,7 +595,7 @@ export default class Intro extends Component {
                     target="_blank"
                   >
                     <img
-                    className="itemhover"
+                      className="itemhover"
                       src={social1}
                       style={{
                         width:

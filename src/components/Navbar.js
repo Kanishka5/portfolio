@@ -181,7 +181,7 @@ const iconstyle = {
 const navitems = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
-  fontSize: "1vw",
+  fontSize: "0.9vw",
   letterSpacing: 0.93,
 };
 

@@ -103,7 +103,6 @@ export default class Navbar extends Component {
             >
               <li style={liststyle}>
                 <a
-                  href="#project"
                   style={{ textDecoration: "none", color: "black" }}
                 >
                   <h2 style={navitems} className="itemhover">

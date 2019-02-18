@@ -116,7 +116,7 @@ const imagestyle = {
 const caption = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
-  fontSize: "1.125rem",
+  fontSize: "1rem",
   padding: "2rem 0"
 };
 

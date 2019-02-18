@@ -15,6 +15,14 @@ import arhn18 from "../assets/images/arhn18@2x.png";
 import social1 from "../assets/images/social1@2x.png";
 import social2 from "../assets/images/social2@2x.png";
 import Fade from "react-reveal/Fade";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 const breakpoints = {
   desktop: 1040,
@@ -25,6 +33,8 @@ const breakpoints = {
 export default class Intro extends Component {
   render() {
     return (
+      <Element name="test1" className="element">
+
       <div
         style={{
           display: "flex",
@@ -609,6 +619,7 @@ export default class Intro extends Component {
           </Fade>
         </Container>
       </div>
+      </Element>
     );
   }
 }

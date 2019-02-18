@@ -3,7 +3,14 @@ import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
 import cv from "../assets/pdf/CV-18-19.pdf";
 import "../assets/css/nav.css";
-import { FaBalanceScale } from "react-icons/fa";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 const breakpoints = {
   desktop: 1040,
@@ -15,18 +22,18 @@ export default class Navbar extends Component {
   constructor() {
     super();
     this.state = {
-      fontSize:"1rem"
-    }
+      fontSize: "1rem"
+    };
   }
-  
+
   mouseEnter() {
-      console.log('mouse enter')
-      this.setState({fontSize:"1.1rem"})
+    console.log("mouse enter");
+    this.setState({ fontSize: "1.1rem" });
   }
-  
+
   mouseLeave() {
-      console.log('mouse leave')
-      this.setState({fontSize:"1rem"})
+    console.log("mouse leave");
+    this.setState({ fontSize: "1rem" });
   }
   componentDidMount() {
     let menuIcon = document.querySelector(".menuIcon");
@@ -79,22 +86,42 @@ export default class Navbar extends Component {
         >
           <ul className="header_lists" style={tabsstyle}>
             <li style={liststyle}>
-              <a  href="/" style={{ textDecoration:"none",color: "#984cd5" , }}>
-                <h2 style={navitems} className="itemhover1" >HOME</h2>
+              <a href="/" style={{ textDecoration: "none", color: "#984cd5" }}>
+                <h2 style={navitems} className="itemhover1">
+                  HOME
+                </h2>
               </a>
             </li>
-            <li style={liststyle}>
-              <a href="#project" style={{ textDecoration:"none" , color: "black" }}>
-                <h2 style={navitems} className="itemhover" >PROJECT</h2>
-              </a>
-            </li>
+            <Link
+              activeClass="active"
+              to="test1"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              <li style={liststyle}>
+                <a
+                  href="#project"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  <h2 style={navitems} className="itemhover">
+                    PROJECT
+                  </h2>
+                </a>
+              </li>
+            </Link>
+
             <li style={liststyle}>
               <a
                 href={cv}
                 download="Rounak_CV"
-                style={{ textDecoration: "none", color: "black", }}
+                style={{ textDecoration: "none", color: "black" }}
               >
-                <h2 style={navitems} className="itemhover" >MY CV</h2>
+                <h2 style={navitems} className="itemhover">
+                  MY CV
+                </h2>
               </a>
             </li>
             <li style={liststyle}>
@@ -103,7 +130,11 @@ export default class Navbar extends Component {
                 target="_top"
                 style={{ textDecoration: "none" }}
               >
-                <img src={hire} className="itemhover" style={{ width: "10vw" }} />
+                <img
+                  src={hire}
+                  className="itemhover"
+                  style={{ width: "10vw" }}
+                />
               </a>
             </li>
           </ul>
@@ -182,7 +213,7 @@ const navitems = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
   fontSize: "0.9vw",
-  letterSpacing: 0.93,
+  letterSpacing: 0.93
 };
 
 const navstyle = {
@@ -191,8 +222,7 @@ const navstyle = {
   justifyContent: "space-between",
   alignItems: "center",
   backgroundColor: "transparent",
-  paddingRight: "14.6%",
-  
+  paddingRight: "14.6%"
 };
 
 const headerStyle = {
@@ -211,5 +241,5 @@ const tabsstyle = {
 const liststyle = {
   listStyle: "none",
   marginLeft: "1.2rem",
-  marginRight: "1.2rem",
+  marginRight: "1.2rem"
 };

@@ -37,7 +37,7 @@ export default class Intro extends Component {
                 color: "#343a40"
               }}
             >
-              Hello, I’m <br /> <font color="#984cd5">Ron</font>
+              Hello, I’m <br /> <font color="#984cd5">Rounak</font>
             </h1>
             <p
               style={{

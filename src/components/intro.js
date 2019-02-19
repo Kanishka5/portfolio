@@ -30,9 +30,11 @@ export default class Intro extends Component {
           <div className="introtxt">
             <h1
               style={{
+                marginLeft:"-0.2vw",
                 fontFamily: "Playfair Display, serif",
                 fontWeight: 700,
-                fontSize: window.innerWidth > breakpoints.tablet ? "3.1vw":"2.5rem",
+                fontSize:
+                  window.innerWidth > breakpoints.tablet ? "3.1vw" : "2.5rem",
                 letterSpacing: "3.27px",
                 color: "#343a40"
               }}
@@ -45,8 +47,10 @@ export default class Intro extends Component {
                 color: "#8c93bd",
                 fontFamily: "Open Sans, sans-serif",
                 fontWeight: 600,
-                fontSize: window.innerWidth > breakpoints.tablet ? "0.9vw":"1rem",
-                lineHeight: window.innerWidth > breakpoints.tablet ? "1.4vw":"1.5rem"
+                fontSize:
+                  window.innerWidth > breakpoints.tablet ? "0.9vw" : "1rem",
+                lineHeight:
+                  window.innerWidth > breakpoints.tablet ? "1.4vw" : "1.5rem"
               }}
             >
               I’m a User Experience Designer who is <b>obsessed</b> with
@@ -116,9 +120,9 @@ const introstyle = {
 const introtxtstyle = {
   width: window.innerWidth > breakpoints.tablet ? "24.3%" : "auto",
   fontSize: "1.2rem",
-  marginLeft: window.innerWidth > breakpoints.tablet ? "15.7%" : 0,
+  marginLeft: window.innerWidth > breakpoints.tablet ? "17%" : 0,
   position: "relative",
-  left:  window.innerWidth > breakpoints.tablet ?"1.2vw":"5vw",
+  left: window.innerWidth > breakpoints.tablet ? 0 : "5vw",
   top: "20vh",
   lineHeight: "22px"
 };
@@ -131,15 +135,15 @@ const btnstyle = {
 
 const imgstyle_frnt = {
   display: window.innerWidth > breakpoints.tablet ? "block" : "none",
-  width:"75.3%",
+  width: "75.3%",
   position: "absolute",
-  right:"6.5vw",
-  top:"6.4vh"
+  right: "6.5vw",
+  top: "6.4vh"
 };
 
 const imgstyle_back = {
   width: window.innerWidth > breakpoints.tablet ? "100%" : "126vw",
   top: window.innerWidth > breakpoints.tablet ? 0 : "24vh",
   position: "absolute",
-  right: window.innerWidth > breakpoints.tablet ?"3vw":"-49vw",
+  right: window.innerWidth > breakpoints.tablet ? "3vw" : "-49vw"
 };

@@ -37,6 +37,7 @@ export default class Navbar extends Component {
   }
   componentDidMount() {
     let menuIcon = document.querySelector(".menuIcon");
+    let menuItems = document.querySelector("#menu");
     let nav = document.querySelector(".overlay-menu");
 
     menuIcon.addEventListener("click", () => {
@@ -58,6 +59,12 @@ export default class Navbar extends Component {
       } else {
         toggleIcon.className = "menuIcon";
       }
+    });
+
+    menuItems.addEventListener("click", () => {
+      nav.style.transform = "translateX(-200%)";
+      nav.style.transition = "transform 0.2s ease-out";
+      toggleIcon.className = "menuIcon";
     });
   }
   render() {
@@ -102,11 +109,9 @@ export default class Navbar extends Component {
               onSetActive={this.handleSetActive}
             >
               <li style={liststyle}>
-                <a
-                  style={{ textDecoration: "none", color: "black" }}
-                >
+                <a href="#" style={{ textDecoration: "none", color: "black" }}>
                   <h2 style={navitems} className="itemhover">
-                    PROJECT
+                    PROJECTS
                   </h2>
                 </a>
               </li>
@@ -162,9 +167,19 @@ export default class Navbar extends Component {
                 HOME{" "}
               </a>
             </li>
-            <li>
-              <a href="#"> PROJECT </a>
-            </li>
+            <Link
+              activeClass="active"
+              to="test1"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              onSetActive={this.handleSetActive}
+            >
+              <li>
+                <a href="#"> PROJECTS </a>
+              </li>
+            </Link>
             <li>
               <a href={cv} download="Rounak_CV">
                 {" "}

@@ -81,6 +81,7 @@ export default class Footer extends Component {
           >
             <img
               className="itemhover"
+              alt="Hire Me"
               src={btn}
               style={{
                 width:
@@ -120,6 +121,7 @@ export default class Footer extends Component {
                 <a
                   className="footerlink"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://dribbble.com/drifted_galaxy"
                   style={linkStyle}
                 >
@@ -140,6 +142,7 @@ export default class Footer extends Component {
                 <a
                   className="footerlink"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.behance.net/Rounak0713"
                   style={linkStyle}
                 >
@@ -160,6 +163,7 @@ export default class Footer extends Component {
                 <a
                   className="footerlink"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.instagram.com/drifted_galaxy"
                   style={linkStyle}
                 >
@@ -180,6 +184,7 @@ export default class Footer extends Component {
                 <a
                   className="footerlink"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://twitter.com/Ronuxdesign"
                   style={linkStyle}
                 >
@@ -200,6 +205,7 @@ export default class Footer extends Component {
                 <a
                   className="footerlink"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.linkedin.com/in/rounak-ghosh-53a21b136/"
                   style={linkStyle}
                 >

@@ -3,14 +3,7 @@ import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
 import cv from "../assets/pdf/CV-18-19.pdf";
 import "../assets/css/nav.css";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 const breakpoints = {
   desktop: 1040,
@@ -77,6 +70,7 @@ export default class Navbar extends Component {
         <div className="logo" style={headerStyle}>
           <img
             src={logo}
+            alt="RonUXD"
             style={{
               height: "auto",
               width: window.innerWidth > breakpoints.tablet ? "2.7vw" : "8.2vw",
@@ -109,7 +103,10 @@ export default class Navbar extends Component {
               onSetActive={this.handleSetActive}
             >
               <li style={liststyle}>
-                <a href="#" style={{ textDecoration: "none", color: "black" }}>
+                <a
+                  href="#projects"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
                   <h2 style={navitems} className="itemhover">
                     PROJECTS
                   </h2>
@@ -135,6 +132,7 @@ export default class Navbar extends Component {
                 style={{ textDecoration: "none" }}
               >
                 <img
+                  alt="btn"
                   src={hire}
                   className="itemhover"
                   style={{ width: "10vw" }}
@@ -177,7 +175,7 @@ export default class Navbar extends Component {
               onSetActive={this.handleSetActive}
             >
               <li>
-                <a href="#"> PROJECTS </a>
+                <a href="#projects"> PROJECTS </a>
               </li>
             </Link>
             <li>
@@ -192,7 +190,7 @@ export default class Navbar extends Component {
                 target="_top"
                 style={{ textDecoration: "none" }}
               >
-                <img src={hire} style={{ width: "50vw" }} />
+                <img alt="btn" src={hire} style={{ width: "50vw" }} />
               </a>
             </li>
           </ul>
@@ -202,26 +200,26 @@ export default class Navbar extends Component {
   }
 }
 
-const menuIconStyle = {
-  cursor: "pointer",
-  display: "block",
-  position: "fixed",
-  right: 15,
-  top: 20,
-  height: 23,
-  width: 27,
-  zIndex: 56
-};
+// const menuIconStyle = {
+//   cursor: "pointer",
+//   display: "block",
+//   position: "fixed",
+//   right: 15,
+//   top: 20,
+//   height: 23,
+//   width: 27,
+//   zIndex: 56
+// };
 
-const iconstyle = {
-  background: "rgb(13, 26, 38)",
-  position: "absolute",
-  left: 1,
-  top: "45%",
-  height: 2,
-  width: 20,
-  transition: "0.4s"
-};
+// const iconstyle = {
+//   background: "rgb(13, 26, 38)",
+//   position: "absolute",
+//   left: 1,
+//   top: "45%",
+//   height: 2,
+//   width: 20,
+//   transition: "0.4s"
+// };
 
 const navitems = {
   fontFamily: "Open Sans, sans-serif",

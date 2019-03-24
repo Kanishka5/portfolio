@@ -30,7 +30,7 @@ export default class Intro extends Component {
           <div className="introtxt">
             <h1
               style={{
-                marginLeft:"-0.2vw",
+                marginLeft: "-0.2vw",
                 fontFamily: "Playfair Display, serif",
                 fontWeight: 700,
                 fontSize:
@@ -60,6 +60,7 @@ export default class Intro extends Component {
               <a
                 href=" https://dribbble.com/drifted_galaxy"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "#984cd5" }}
               >
                 Dribbble{" "}
@@ -68,6 +69,7 @@ export default class Intro extends Component {
               <a
                 href="https://www.behance.net/Rounak0713"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "#984cd5" }}
               >
                 Behance
@@ -76,6 +78,7 @@ export default class Intro extends Component {
               <a
                 href="https://www.instagram.com/drifted_galaxy"
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{ textDecoration: "none", color: "#984cd5" }}
               >
                 Instagram
@@ -127,11 +130,11 @@ const introtxtstyle = {
   lineHeight: "22px"
 };
 
-const btnstyle = {
-  padding: "0.5rem",
-  borderRadius: "0.3rem",
-  border: 0
-};
+// const btnstyle = {
+//   padding: "0.5rem",
+//   borderRadius: "0.3rem",
+//   border: 0
+// };
 
 const imgstyle_frnt = {
   display: window.innerWidth > breakpoints.tablet ? "block" : "none",

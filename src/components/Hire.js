@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import PropTypes from "prop-types";
+import React, { Component } from "react";
 
 export default class HireForm extends Component {
   state = {
@@ -10,59 +10,55 @@ export default class HireForm extends Component {
   handleChange = this.handleChange.bind(this);
   handleSubmit = this.handleSubmit.bind(this);
 
-  static sender = 'sender@example.com';
+  static sender = "sender@example.com";
 
   handleCancel() {
     this.setState({
-      message: '',
-      useremail: '',
-      sendername: '',
+      message: "",
+      useremail: "",
+      sendername: ""
     });
   }
 
   handleChange(event) {
-    const value= event.target.value;
+    const value = event.target.value;
     const name = event.target.name;
 
     this.setState({
-        [name]: value,
+      [name]: value
     });
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    alert('Message sent.')
+    alert("Message sent.");
 
-    const {
-      REACT_APP_EMAILJS_RECEIVER: receiverEmail,
-      REACT_APP_EMAILJS_TEMPLATEID: template,
-    } = this.props.env;
+    const { REACT_APP_EMAILJS_RECEIVER: receiverEmail } = this.props.env;
 
     this.sendFeedback(
       this.sender,
       receiverEmail,
       this.state.message,
       this.state.sendername,
-      this.state.useremail,
+      this.state.useremail
     );
 
     this.setState({
-        message: '',
-        useremail: '',
-        sendername: '',
+      message: "",
+      useremail: "",
+      sendername: "",
       formSubmitted: true
     });
   }
 
-  sendFeedback(senderEmail, receiverEmail, message,sendername,useremail) {
+  sendFeedback(senderEmail, receiverEmail, message, sendername, useremail) {
     window.emailjs
-      .send('mailgun', 'template_mh0xaz6q', {
+      .send("mailgun", "template_mh0xaz6q", {
         senderEmail,
         receiverEmail,
         message,
         useremail,
-        sendername,
-        
+        sendername
       })
       .then(res => {
         this.setState({
@@ -70,7 +66,7 @@ export default class HireForm extends Component {
         });
       })
       // Handle errors here however you like
-      .catch(err => console.error('Failed to send feedback. Error: ', err));
+      .catch(err => console.error("Failed to send feedback. Error: ", err));
   }
 
   render() {
@@ -79,25 +75,29 @@ export default class HireForm extends Component {
         <h1>Hire me</h1>
         <label>
           Name:
-          <input type="text" 
+          <input
+            type="text"
             className="text-input2"
             id="feedback-entry2"
             name="sendername"
-            value={this.state.sendername} 
-            onChange={this.handleChange} />
+            value={this.state.sendername}
+            onChange={this.handleChange}
+          />
         </label>
         <label>
           Email:
-          <input type="text" 
+          <input
+            type="text"
             className="text-input3"
             id="feedback-entry3"
             name="useremail"
-            value={this.state.useremail} 
-            onChange={this.handleChange} />
+            value={this.state.useremail}
+            onChange={this.handleChange}
+          />
         </label>
         <label>
-            <h3>Message:</h3>
-            <textarea
+          <h3>Message:</h3>
+          <textarea
             className="text-input"
             id="feedback-entry"
             name="message"
@@ -105,7 +105,7 @@ export default class HireForm extends Component {
             placeholder="Enter your message"
             required
             value={this.state.message}
-            />
+          />
         </label>
 
         <div className="btn-group">

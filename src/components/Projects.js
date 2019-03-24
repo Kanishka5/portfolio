@@ -16,14 +16,7 @@ import social1 from "../assets/images/social1@2x.png";
 import social2 from "../assets/images/social2@2x.png";
 import story from "../assets/images/Project_story.png";
 import Fade from "react-reveal/Fade";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+import { Element } from "react-scroll";
 
 const breakpoints = {
   desktop: 1040,
@@ -107,6 +100,88 @@ export default class Intro extends Component {
               maxWidth: "100vw"
             }}
           >
+            <Fade right>
+              <Row
+                style={{
+                  paddingTop: "15vh"
+                }}
+              >
+                <Col
+                  xs={{ order: 12 }}
+                  md={{ order: 1 }}
+                  sm={{ order: 1 }}
+                  lg={{ order: 1 }}
+                  style={{
+                    padding: 0,
+                    textAlign:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                  }}
+                >
+                  <Row
+                    style={{
+                      paddingLeft:
+                        window.innerWidth > breakpoints.tablet ? "auto" : "5vw",
+                      textAlign:
+                        window.innerWidth > breakpoints.tablet ? "auto" : "left"
+                    }}
+                  >
+                    <h2 style={headStyle}>
+                      Project on relation between design of privacy settings and
+                      trust in mobile apps
+                    </h2>
+                    <p style={paraStyle2}>
+                      This research project explored whether decrement in the
+                      number of privacy settings in an application increases
+                      trust perceived by the users of any mobile app. To know
+                      more about the findings of the project, head over to the
+                      case study.
+                    </p>
+                  </Row>
+                  <Row
+                    style={{
+                      flexDirection: "column",
+                      position:
+                        window.innerWidth > breakpoints.tablet
+                          ? "absolute"
+                          : "static",
+                      left: 0,
+                      bottom: "-1.8vw"
+                    }}
+                  >
+                    <a
+                      href="https://blog.prototypr.io/a-step-away-from-privacy-hoax-d6e29ced0488"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        alt="btn"
+                        className="itemhover"
+                        src={casestudy}
+                        style={{
+                          width:
+                            window.innerWidth > breakpoints.tablet
+                              ? "12.6vw"
+                              : 192
+                        }}
+                      />
+                    </a>
+                  </Row>{" "}
+                </Col>
+                <Col
+                  xs={{ order: 1 }}
+                  md={{ order: 12 }}
+                  sm={{ order: 12 }}
+                  lg={{ order: 12 }}
+                  style={{
+                    padding: 0,
+                    textAlign:
+                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                  }}
+                >
+                  <img alt="btn" src={project2} style={imgStyleRight} />{" "}
+                </Col>
+              </Row>
+            </Fade>
             <Fade left>
               <Row style={{ paddingTop: "15vh" }}>
                 <Col
@@ -116,7 +191,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img src={project1} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project1} style={imgStyleLeft} />{" "}
                 </Col>
                 <Col
                   style={{
@@ -151,8 +226,10 @@ export default class Intro extends Component {
                     <a
                       href="https://blog.prototypr.io/ecogrocer-app-an-ux-case-study-2e2a9dba5d8e"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         className="itemhover"
                         src={casestudy}
                         style={{
@@ -166,8 +243,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/73902753/GreenGrocer-an-UX-case-study-and-process-development"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         src={behance1}
                         className="itemhover"
                         style={{
@@ -232,8 +311,13 @@ export default class Intro extends Component {
                       bottom: "-1.8vw"
                     }}
                   >
-                    <a target="_blank" href="https://medium.com/@rg.uidesign/5-things-i-learned-working-as-a-solo-ui-ux-designer-in-an-entry-level-startup-83f98b5d1ece">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://medium.com/@rg.uidesign/5-things-i-learned-working-as-a-solo-ui-ux-designer-in-an-entry-level-startup-83f98b5d1ece"
+                    >
                       <img
+                        alt="btn"
                         className="itemhover"
                         src={story}
                         style={{
@@ -247,8 +331,10 @@ export default class Intro extends Component {
                     <a
                       href="https://dribbble.com/drifted_galaxy"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         className="itemhover"
                         src={dribble}
                         style={{
@@ -272,7 +358,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img src={project2} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project2} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
@@ -285,7 +371,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img src={project3} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project3} style={imgStyleLeft} />{" "}
                 </Col>
                 <Col
                   style={{
@@ -324,8 +410,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/56701585/Knowdata-education-app-User-Interface-Design"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         src={behance1}
                         className="itemhover"
                         style={{
@@ -388,8 +476,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/54118173/Weight-tracker-project-Pregbuddy-app-UI-concepts"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         src={behance1}
                         className="itemhover"
                         style={{
@@ -413,7 +503,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img src={project4} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project4} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
@@ -426,7 +516,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img src={project5} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project5} style={imgStyleLeft} />{" "}
                 </Col>
                 <Col
                   style={{
@@ -462,8 +552,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/51355885/Aarohan-2017-Posters"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         className="itemhover"
                         src={arhn17}
                         style={{
@@ -477,8 +569,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/63676451/AAROHAN-2018-POSTERS"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         className="itemhover"
                         src={arhn18}
                         style={{
@@ -538,8 +632,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/63648505/AAROHAN-2018-WEBSITE-DESIGN-DEVELOPMENT"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         src={behance1}
                         className="itemhover"
                         style={{
@@ -563,7 +659,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img src={project6} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project6} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
@@ -576,7 +672,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img src={project7} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project7} style={imgStyleLeft} />{" "}
                 </Col>
                 <Col
                   style={{
@@ -611,8 +707,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/63686341/Social-media-posts-Vol-2"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         className="itemhover"
                         src={social2}
                         style={{
@@ -626,8 +724,10 @@ export default class Intro extends Component {
                     <a
                       href="https://www.behance.net/gallery/56745539/Social-media-posts-vol-1"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
+                        alt="btn"
                         className="itemhover"
                         src={social1}
                         style={{

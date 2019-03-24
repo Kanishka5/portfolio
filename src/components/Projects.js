@@ -7,6 +7,7 @@ import project4 from "../assets/images/pregbuddy_cover.png";
 import project5 from "../assets/images/visual_cover.png";
 import project6 from "../assets/images/web_cover.png";
 import project7 from "../assets/images/media-image@3x.png";
+import project8 from "../assets/images/Privacy_Artwork.jpg";
 import casestudy from "../assets/images/case-study-button.png";
 import behance1 from "../assets/images/project-button@2x.png";
 import dribble from "../assets/images/dribbble@2x.png";
@@ -178,7 +179,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt="btn" src={project2} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project8} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>

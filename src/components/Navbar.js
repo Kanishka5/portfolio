@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
-import cv from "../assets/pdf/CV-18-19.pdf";
+import cv from "../assets/pdf/CV-19.pdf";
 import "../assets/css/nav.css";
 import { Link } from "react-scroll";
 

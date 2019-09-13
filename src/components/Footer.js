@@ -13,12 +13,12 @@ export default class Footer extends Component {
     return (
       <div style={footerstyle}>
         <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:600,400"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css?family=Open+Sans:600,400'
+          rel='stylesheet'
         />
         <link
-          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700'
+          rel='stylesheet'
         />
         <div
           style={{
@@ -75,13 +75,13 @@ export default class Footer extends Component {
             visual design projects, I’ll be more than happy to work together!
           </p>
           <a
-            className="footerlink"
-            href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
-            target="_top"
+            className='footerlink'
+            href='mailto:rg.uidesign@gmail.com?Subject=I would like to hire you'
+            target='_top'
           >
             <img
-              className="itemhover"
-              alt="Hire Me"
+              className='itemhover'
+              alt='Hire Me'
               src={btn}
               style={{
                 width:
@@ -94,7 +94,7 @@ export default class Footer extends Component {
             style={{
               borderTopStyle: "solid",
               borderColor: "#8300c4",
-              marginTop: "5.7%"
+              marginTop: "2.7%"
             }}
           >
             <ul
@@ -119,10 +119,10 @@ export default class Footer extends Component {
                 }}
               >
                 <a
-                  className="footerlink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://dribbble.com/drifted_galaxy"
+                  className='footerlink'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://dribbble.com/drifted_galaxy'
                   style={linkStyle}
                 >
                   DRIBBBLE
@@ -140,10 +140,10 @@ export default class Footer extends Component {
                 }}
               >
                 <a
-                  className="footerlink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.behance.net/Rounak0713"
+                  className='footerlink'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.behance.net/Rounak0713'
                   style={linkStyle}
                 >
                   BEHANCE
@@ -161,10 +161,10 @@ export default class Footer extends Component {
                 }}
               >
                 <a
-                  className="footerlink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.instagram.com/drifted_galaxy"
+                  className='footerlink'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.instagram.com/drifted_galaxy'
                   style={linkStyle}
                 >
                   INSTAGRAM
@@ -182,10 +182,10 @@ export default class Footer extends Component {
                 }}
               >
                 <a
-                  className="footerlink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://twitter.com/Ronuxdesign"
+                  className='footerlink'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://twitter.com/Ronuxdesign'
                   style={linkStyle}
                 >
                   TWITTER
@@ -203,10 +203,10 @@ export default class Footer extends Component {
                 }}
               >
                 <a
-                  className="footerlink"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://www.linkedin.com/in/rounak-ghosh-53a21b136/"
+                  className='footerlink'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  href='https://www.linkedin.com/in/rounak-ghosh-53a21b136/'
                   style={linkStyle}
                 >
                   LINKEDIN

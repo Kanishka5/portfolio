@@ -10,24 +10,24 @@ const breakpoints = {
 export default class Intro extends Component {
   render() {
     return (
-      <div className="intro" style={introstyle}>
+      <div className='intro' style={introstyle}>
         <link
-          rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-          crossorigin="anonymous"
+          rel='stylesheet'
+          href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
+          integrity='sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS'
+          crossorigin='anonymous'
         />
         <link
-          href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700'
+          rel='stylesheet'
         />
         <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:600,700"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css?family=Open+Sans:600,700'
+          rel='stylesheet'
         />
 
         <div style={introtxtstyle}>
-          <div className="introtxt">
+          <div className='introtxt'>
             <h1
               style={{
                 marginLeft: "-0.2vw",
@@ -39,7 +39,7 @@ export default class Intro extends Component {
                 color: "#343a40"
               }}
             >
-              Hello, I’m <br /> <font color="#984cd5">Rounak</font>
+              Hello, I’m <br /> <font color='#984cd5'>Rounak</font>
             </h1>
             <p
               style={{
@@ -58,27 +58,27 @@ export default class Intro extends Component {
               user-centred design principles through solutions which have a
               meaningful impact. You can find my latest works on{" "}
               <a
-                href=" https://dribbble.com/drifted_galaxy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href=' https://dribbble.com/drifted_galaxy'
+                target='_blank'
+                rel='noopener noreferrer'
                 style={{ textDecoration: "none", color: "#984cd5" }}
               >
                 Dribbble{" "}
               </a>
               and{" "}
               <a
-                href="https://www.behance.net/Rounak0713"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://www.behance.net/Rounak0713'
+                target='_blank'
+                rel='noopener noreferrer'
                 style={{ textDecoration: "none", color: "#984cd5" }}
               >
                 Behance
               </a>
               , and for regular design posts follow my{" "}
               <a
-                href="https://www.instagram.com/drifted_galaxy"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='https://www.instagram.com/ron_ux'
+                target='_blank'
+                rel='noopener noreferrer'
                 style={{ textDecoration: "none", color: "#984cd5" }}
               >
                 Instagram
@@ -90,9 +90,9 @@ export default class Intro extends Component {
         <div
           style={{ width: "57.4%", marginRight: "3.6%", position: "relative" }}
         >
-          <div className="ilust1" style={imgstyle_back}>
+          <div className='ilust1' style={imgstyle_back}>
             <img
-              alt="illustration"
+              alt='illustration'
               style={{
                 width: "100%",
                 height: "auto",
@@ -103,9 +103,9 @@ export default class Intro extends Component {
               src={landing_ilst}
             />
           </div>
-          <div className="ilust1" style={imgstyle_frnt}>
+          <div className='ilust1' style={imgstyle_frnt}>
             <img
-              alt="illustration"
+              alt='illustration'
               style={{ height: "auto", width: "100%" }}
               src={landing_ilst}
             />
@@ -127,7 +127,8 @@ const introtxtstyle = {
   position: "relative",
   left: window.innerWidth > breakpoints.tablet ? 0 : "5vw",
   top: "20vh",
-  lineHeight: "22px"
+  lineHeight: "22px",
+  zIndex: 1
 };
 
 // const btnstyle = {

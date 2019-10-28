@@ -486,7 +486,7 @@ export default class Intro extends Component {
                   >
                     <h2 style={headStyle}>
                       Pregbuddy - The Weight-tracker project: Ideation and
-                      wireframing
+                      Wireframing
                     </h2>
                     <p style={paraStyle2}>
                       The work with Pregbuddy - a large scale startup based in

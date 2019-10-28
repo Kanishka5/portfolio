@@ -84,15 +84,16 @@ export default class Footer extends Component {
               alt='Hire Me'
               src={btn}
               style={{
-                width:
-                  window.innerWidth > breakpoints.tablet ? "15.3vw" : "50vw",
-                paddingTop: "1rem"
+                width: window.innerWidth > breakpoints.tablet ? "15.3vw" : 260,
+                paddingTop: "1rem",
+                marginLeft: window.innerWidth > breakpoints.tablet ? 0 : 20
               }}
             />
           </a>
           <div
             style={{
-              borderTopStyle: "solid",
+              borderTopStyle:
+                window.innerWidth > breakpoints.tablet ? "solid" : "none",
               borderColor: "#8300c4",
               marginTop: "2.7%"
             }}

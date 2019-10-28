@@ -164,7 +164,7 @@ export default class Footer extends Component {
                   className='footerlink'
                   target='_blank'
                   rel='noopener noreferrer'
-                  href='https://www.instagram.com/drifted_galaxy'
+                  href='https://www.instagram.com/ron_ux'
                   style={linkStyle}
                 >
                   INSTAGRAM

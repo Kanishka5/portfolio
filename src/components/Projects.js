@@ -8,8 +8,8 @@ import project5 from "../assets/images/visual_cover.png";
 import project6 from "../assets/images/web_cover.png";
 import project7 from "../assets/images/media-image@3x.png";
 import project8 from "../assets/images/Privacy_Artwork.jpg";
-import casestudy from "../assets/images/case-study-button.png";
-import behance1 from "../assets/images/project-button@2x.png";
+import casestudy from "../assets/images/view-case-study.png";
+import behance1 from "../assets/images/view-project.png";
 import dribble from "../assets/images/dribbble@2x.png";
 import arhn17 from "../assets/images/arhn17@2x.png";
 import arhn18 from "../assets/images/arhn18@2x.png";
@@ -121,6 +121,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
+                  {/* project 1 */}
                   <Row style={textdiv}>
                     <h2 style={headStyle}>
                       UX Research in Library - Understanding the Customer
@@ -158,8 +159,8 @@ export default class Intro extends Component {
                         style={{
                           width:
                             window.innerWidth > breakpoints.tablet
-                              ? "12.6vw"
-                              : 192
+                              ? "16vw"
+                              : 260
                         }}
                       />
                     </a>
@@ -184,6 +185,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
+                  {/* project 2 */}
                   <Row
                     style={{
                       paddingLeft:
@@ -193,15 +195,12 @@ export default class Intro extends Component {
                     }}
                   >
                     <h2 style={headStyle}>
-                      Project on relation between design of privacy settings and
-                      trust in mobile apps
+                      UX Research: Privacy settings and trust in mobile apps
                     </h2>
                     <p style={paraStyle2}>
-                      This research project explored whether decrement in the
-                      number of privacy settings in an application increases
-                      trust perceived by the users of any mobile app. To know
-                      more about the findings of the project, head over to the
-                      case study.
+                      Multiphased research project looking into the effect of
+                      privacy settings on trust and usability in social media
+                      apps.
                     </p>
                   </Row>
                   <Row
@@ -227,8 +226,8 @@ export default class Intro extends Component {
                         style={{
                           width:
                             window.innerWidth > breakpoints.tablet
-                              ? "12.6vw"
-                              : 192
+                              ? "16vw"
+                              : 260
                         }}
                       />
                     </a>
@@ -267,6 +266,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
+                  {/* project 3 */}
                   <Row style={textdiv}>
                     <h2 style={headStyle}>
                       Eco Grocer App - UX Design <br /> Process
@@ -302,23 +302,6 @@ export default class Intro extends Component {
                         style={{
                           width:
                             window.innerWidth > breakpoints.tablet
-                              ? "12.6vw"
-                              : 192
-                        }}
-                      />
-                    </a>
-                    <a
-                      href='https://www.behance.net/gallery/73902753/GreenGrocer-an-UX-case-study-and-process-development'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <img
-                        alt='btn'
-                        src={behance1}
-                        className='itemhover'
-                        style={{
-                          width:
-                            window.innerWidth > breakpoints.tablet
                               ? "16vw"
                               : 260
                         }}
@@ -345,6 +328,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
+                  {/* project 4 */}
                   <Row
                     style={{
                       paddingLeft:
@@ -354,7 +338,7 @@ export default class Intro extends Component {
                     }}
                   >
                     <h2 style={headStyle}>
-                      Kloh App Redesign - UI/UX <br /> Internship
+                      Kloh: Help people meet offline - An events and social app
                     </h2>
                     <p style={paraStyle2}>
                       My work with Kloh - a startup based in Bengaluru, India,
@@ -363,8 +347,7 @@ export default class Intro extends Component {
                       application with the incorporation of 5 new
                       functionalities. My role involved user research,
                       developing wireframes, rendering visual interfaces, rapid
-                      prototyping, usability testing, micro-interactions, design
-                      evaluation.
+                      prototyping.
                     </p>
                   </Row>
                   <Row
@@ -379,31 +362,14 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      target='_blank'
-                      rel='noopener noreferrer'
-                      href='https://medium.com/@rg.uidesign/5-things-i-learned-working-as-a-solo-ui-ux-designer-in-an-entry-level-startup-83f98b5d1ece'
-                    >
-                      <img
-                        alt='btn'
-                        className='itemhover'
-                        src={story}
-                        style={{
-                          width:
-                            window.innerWidth > breakpoints.tablet
-                              ? "12.6vw"
-                              : 192
-                        }}
-                      />
-                    </a>
-                    <a
-                      href='https://dribbble.com/drifted_galaxy'
+                      href='https://www.behance.net/gallery/87352065/Kloh-A-Social-App-UIUX'
                       target='_blank'
                       rel='noopener noreferrer'
                     >
                       <img
                         alt='btn'
                         className='itemhover'
-                        src={dribble}
+                        src={casestudy}
                         style={{
                           width:
                             window.innerWidth > breakpoints.tablet
@@ -440,6 +406,7 @@ export default class Intro extends Component {
                 >
                   <img alt='btn' src={project3} style={imgStyleLeft} />{" "}
                 </Col>
+                {/* project 5 */}
                 <Col
                   style={{
                     padding: 0,
@@ -449,7 +416,7 @@ export default class Intro extends Component {
                 >
                   <Row style={textdiv}>
                     <h2 style={headStyle}>
-                      Knowdata App Design - UI <br /> Internship
+                      Knowdata: A digital learning platform
                     </h2>
                     <p style={paraStyle1}>
                       My work with Algebra Analytics - a startup based in
@@ -508,6 +475,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
+                  {/* project 6 */}
                   <Row
                     style={{
                       paddingLeft:
@@ -516,7 +484,10 @@ export default class Intro extends Component {
                         window.innerWidth > breakpoints.tablet ? "auto" : "left"
                     }}
                   >
-                    <h2 style={headStyle}>Pregbuddy App - UI Internship</h2>
+                    <h2 style={headStyle}>
+                      Pregbuddy - The Weight-tracker project: Ideation and
+                      wireframing
+                    </h2>
                     <p style={paraStyle2}>
                       The work with Pregbuddy - a large scale startup based in
                       Bengaluru, India, which has a full-scale product providing
@@ -585,6 +556,7 @@ export default class Intro extends Component {
                 >
                   <img alt='btn' src={project5} style={imgStyleLeft} />{" "}
                 </Col>
+                {/* project 6 */}
                 <Col
                   style={{
                     padding: 0,

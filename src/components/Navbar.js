@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
-import cv from "../assets/pdf/CV-19.pdf";
+import cv from "../assets/pdf/Resume_RG.pdf";
 import "../assets/css/nav.css";
 import { Link } from "react-scroll";
 
@@ -62,15 +62,15 @@ export default class Navbar extends Component {
   }
   render() {
     return (
-      <div className="navbar" style={navstyle}>
+      <div className='navbar' style={navstyle}>
         <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700"
-          rel="stylesheet"
+          href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700'
+          rel='stylesheet'
         />
-        <div className="logo" style={headerStyle}>
+        <div className='logo' style={headerStyle}>
           <img
             src={logo}
-            alt="RonUXD"
+            alt='RonUXD'
             style={{
               height: "auto",
               width: window.innerWidth > breakpoints.tablet ? "2.7vw" : "8.2vw",
@@ -80,22 +80,22 @@ export default class Navbar extends Component {
           />
         </div>
         <nav
-          className="navbar"
+          className='navbar'
           style={{
             display: window.innerWidth > breakpoints.tablet ? "block" : "none"
           }}
         >
-          <ul className="header_lists" style={tabsstyle}>
+          <ul className='header_lists' style={tabsstyle}>
             <li style={liststyle}>
-              <a href="/" style={{ textDecoration: "none", color: "#984cd5" }}>
-                <h2 style={navitems} className="itemhover1">
+              <a href='/' style={{ textDecoration: "none", color: "#984cd5" }}>
+                <h2 style={navitems} className='itemhover1'>
                   HOME
                 </h2>
               </a>
             </li>
             <Link
-              activeClass="active"
-              to="test1"
+              activeClass='active'
+              to='test1'
               spy={true}
               smooth={true}
               offset={50}
@@ -104,11 +104,11 @@ export default class Navbar extends Component {
             >
               <li style={liststyle}>
                 <a
-                  href="#projects"
+                  href='#projects'
                   style={{ textDecoration: "none", color: "black" }}
                 >
-                  <h2 style={navitems} className="itemhover">
-                    PROJECTS
+                  <h2 style={navitems} className='itemhover'>
+                    WORK
                   </h2>
                 </a>
               </li>
@@ -117,24 +117,24 @@ export default class Navbar extends Component {
             <li style={liststyle}>
               <a
                 href={cv}
-                download="Rounak_CV"
+                download='Rounak_CV'
                 style={{ textDecoration: "none", color: "black" }}
               >
-                <h2 style={navitems} className="itemhover">
+                <h2 style={navitems} className='itemhover'>
                   MY CV
                 </h2>
               </a>
             </li>
             <li style={liststyle}>
               <a
-                href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
-                target="_top"
+                href='mailto:rg.uidesign@gmail.com?Subject=I would like to hire you'
+                target='_top'
                 style={{ textDecoration: "none" }}
               >
                 <img
-                  alt="btn"
+                  alt='btn'
                   src={hire}
-                  className="itemhover"
+                  className='itemhover'
                   style={{ width: "10vw" }}
                 />
               </a>
@@ -142,32 +142,32 @@ export default class Navbar extends Component {
           </ul>
         </nav>
         <div
-          className="menuIcon"
+          className='menuIcon'
           style={{
             display: window.innerWidth > breakpoints.tablet ? "none" : "block"
           }}
         >
-          <span className="icon icon-bars" />
-          <span className="icon icon-bars overlay" />
+          <span className='icon icon-bars' />
+          <span className='icon icon-bars overlay' />
         </div>
         <div
-          className="overlay-menu"
+          className='overlay-menu'
           style={{
             fontFamily: "Open Sans, sans-serif",
             fontWeight: 600,
             display: window.innerWidth > breakpoints.tablet ? "none" : "block"
           }}
         >
-          <ul id="menu">
+          <ul id='menu'>
             <li>
-              <a href="/" style={{ color: "#984cd5" }}>
+              <a href='/' style={{ color: "#984cd5" }}>
                 {" "}
                 HOME{" "}
               </a>
             </li>
             <Link
-              activeClass="active"
-              to="test1"
+              activeClass='active'
+              to='test1'
               spy={true}
               smooth={true}
               offset={50}
@@ -175,22 +175,22 @@ export default class Navbar extends Component {
               onSetActive={this.handleSetActive}
             >
               <li>
-                <a href="#projects"> PROJECTS </a>
+                <a href='#projects'> PROJECTS </a>
               </li>
             </Link>
             <li>
-              <a href={cv} download="Rounak_CV">
+              <a href={cv} download='Rounak_CV'>
                 {" "}
                 MY CV{" "}
               </a>
             </li>
             <li style={liststyle}>
               <a
-                href="mailto:rg.uidesign@gmail.com?Subject=I would like to hire you"
-                target="_top"
+                href='mailto:rg.uidesign@gmail.com?Subject=I would like to hire you'
+                target='_top'
                 style={{ textDecoration: "none" }}
               >
-                <img alt="btn" src={hire} style={{ width: "50vw" }} />
+                <img alt='btn' src={hire} style={{ width: "50vw" }} />
               </a>
             </li>
           </ul>

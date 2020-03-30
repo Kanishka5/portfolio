@@ -10,12 +10,12 @@ import project7 from "../assets/images/media-image@3x.png";
 import project8 from "../assets/images/Privacy_Artwork.jpg";
 import casestudy from "../assets/images/view-case-study.png";
 import behance1 from "../assets/images/view-project.png";
-import dribble from "../assets/images/dribbble@2x.png";
+// import dribble from "../assets/images/dribbble@2x.png";
 import arhn17 from "../assets/images/arhn17@2x.png";
 import arhn18 from "../assets/images/arhn18@2x.png";
 import social1 from "../assets/images/social1@2x.png";
 import social2 from "../assets/images/social2@2x.png";
-import story from "../assets/images/Project_story.png";
+// import story from "../assets/images/Project_story.png";
 import lib from "../assets/images/ux_lib.jpg";
 import lib_case from "../assets/pdf/ux_lib.pdf";
 import Fade from "react-reveal/Fade";
@@ -30,7 +30,7 @@ const breakpoints = {
 export default class Intro extends Component {
   render() {
     return (
-      <Element name='test1' className='element'>
+      <Element name="test1" className="element">
         <div
           style={{
             display: "flex",
@@ -42,12 +42,12 @@ export default class Intro extends Component {
           }}
         >
           <link
-            href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
+            rel="stylesheet"
           />
           <link
-            href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+            rel="stylesheet"
           />
           <div
             style={{
@@ -112,7 +112,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={lib} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={lib} style={imgStyleLeft} />{" "}
                 </Col>
                 <Col
                   style={{
@@ -149,12 +149,12 @@ export default class Intro extends Component {
                   >
                     <a
                       href={lib_case}
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={casestudy}
                         style={{
                           width:
@@ -215,13 +215,13 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://blog.prototypr.io/a-step-away-from-privacy-hoax-d6e29ced0488'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://blog.prototypr.io/a-step-away-from-privacy-hoax-d6e29ced0488"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={casestudy}
                         style={{
                           width:
@@ -244,7 +244,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project8} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project8} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
@@ -257,7 +257,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project1} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project1} style={imgStyleLeft} />{" "}
                 </Col>
                 <Col
                   style={{
@@ -291,13 +291,13 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://blog.prototypr.io/ecogrocer-app-an-ux-case-study-2e2a9dba5d8e'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://blog.prototypr.io/ecogrocer-app-an-ux-case-study-2e2a9dba5d8e"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={casestudy}
                         style={{
                           width:
@@ -362,13 +362,13 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://www.behance.net/gallery/87352065/Kloh-A-Social-App-UIUX'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/87352065/Kloh-A-Social-App-UIUX"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={casestudy}
                         style={{
                           width:
@@ -391,7 +391,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project2} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project2} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
@@ -404,7 +404,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project3} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project3} style={imgStyleLeft} />{" "}
                 </Col>
                 {/* project 5 */}
                 <Col
@@ -442,14 +442,14 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://www.behance.net/gallery/56701585/Knowdata-education-app-User-Interface-Design'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/56701585/Knowdata-education-app-User-Interface-Design"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
+                        alt="btn"
                         src={behance1}
-                        className='itemhover'
+                        className="itemhover"
                         style={{
                           width:
                             window.innerWidth > breakpoints.tablet
@@ -512,14 +512,14 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://www.behance.net/gallery/54118173/Weight-tracker-project-Pregbuddy-app-UI-concepts'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/54118173/Weight-tracker-project-Pregbuddy-app-UI-concepts"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
+                        alt="btn"
                         src={behance1}
-                        className='itemhover'
+                        className="itemhover"
                         style={{
                           width:
                             window.innerWidth > breakpoints.tablet
@@ -541,7 +541,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project4} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project4} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
@@ -554,7 +554,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project5} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project5} style={imgStyleLeft} />{" "}
                 </Col>
                 {/* project 6 */}
                 <Col
@@ -589,13 +589,13 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://www.behance.net/gallery/51355885/Aarohan-2017-Posters'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/51355885/Aarohan-2017-Posters"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={arhn17}
                         style={{
                           width:
@@ -606,13 +606,13 @@ export default class Intro extends Component {
                       />
                     </a>
                     <a
-                      href='https://www.behance.net/gallery/63676451/AAROHAN-2018-POSTERS'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/63676451/AAROHAN-2018-POSTERS"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={arhn18}
                         style={{
                           width:
@@ -669,14 +669,14 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://www.behance.net/gallery/63648505/AAROHAN-2018-WEBSITE-DESIGN-DEVELOPMENT'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/63648505/AAROHAN-2018-WEBSITE-DESIGN-DEVELOPMENT"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
+                        alt="btn"
                         src={behance1}
-                        className='itemhover'
+                        className="itemhover"
                         style={{
                           width:
                             window.innerWidth > breakpoints.tablet
@@ -698,7 +698,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project6} style={imgStyleRight} />{" "}
+                  <img alt="btn" src={project6} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
@@ -711,7 +711,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  <img alt='btn' src={project7} style={imgStyleLeft} />{" "}
+                  <img alt="btn" src={project7} style={imgStyleLeft} />{" "}
                 </Col>
                 <Col
                   style={{
@@ -744,13 +744,13 @@ export default class Intro extends Component {
                     }}
                   >
                     <a
-                      href='https://www.behance.net/gallery/63686341/Social-media-posts-Vol-2'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/63686341/Social-media-posts-Vol-2"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={social2}
                         style={{
                           width:
@@ -761,13 +761,13 @@ export default class Intro extends Component {
                       />
                     </a>
                     <a
-                      href='https://www.behance.net/gallery/56745539/Social-media-posts-vol-1'
-                      target='_blank'
-                      rel='noopener noreferrer'
+                      href="https://www.behance.net/gallery/56745539/Social-media-posts-vol-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <img
-                        alt='btn'
-                        className='itemhover'
+                        alt="btn"
+                        className="itemhover"
                         src={social1}
                         style={{
                           width:

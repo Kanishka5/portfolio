@@ -1,21 +1,21 @@
 import React, { Component } from "react";
 import hire from "../assets/images/hire_button.png";
 import logo from "../assets/images/logo_mark-01.png";
-import cv from "../assets/pdf/Rounak_CV.pdf";
+import cv from "../assets/pdf/CV_Rounak-20.pdf";
 import "../assets/css/nav.css";
 import { Link } from "react-scroll";
 
 const breakpoints = {
   desktop: 1040,
   tablet: 840,
-  mobile: 540
+  mobile: 540,
 };
 
 export default class Navbar extends Component {
   constructor() {
     super();
     this.state = {
-      fontSize: "1rem"
+      fontSize: "1rem",
     };
   }
 
@@ -73,14 +73,14 @@ export default class Navbar extends Component {
               height: "auto",
               width: window.innerWidth > breakpoints.tablet ? "2.7vw" : "8.2vw",
               position: "absolute",
-              top: "3.5vh"
+              top: "3.5vh",
             }}
           />
         </div>
         <nav
           className="navbar"
           style={{
-            display: window.innerWidth > breakpoints.tablet ? "block" : "none"
+            display: window.innerWidth > breakpoints.tablet ? "block" : "none",
           }}
         >
           <ul className="header_lists" style={tabsstyle}>
@@ -142,7 +142,7 @@ export default class Navbar extends Component {
         <div
           className="menuIcon"
           style={{
-            display: window.innerWidth > breakpoints.tablet ? "none" : "block"
+            display: window.innerWidth > breakpoints.tablet ? "none" : "block",
           }}
         >
           <span className="icon icon-bars" />
@@ -153,7 +153,7 @@ export default class Navbar extends Component {
           style={{
             fontFamily: "Open Sans, sans-serif",
             fontWeight: 600,
-            display: window.innerWidth > breakpoints.tablet ? "none" : "block"
+            display: window.innerWidth > breakpoints.tablet ? "none" : "block",
           }}
         >
           <ul id="menu">
@@ -223,7 +223,7 @@ const navitems = {
   fontFamily: "Open Sans, sans-serif",
   fontWeight: 600,
   fontSize: "0.9vw",
-  letterSpacing: 0.93
+  letterSpacing: 0.93,
 };
 
 const navstyle = {
@@ -232,24 +232,24 @@ const navstyle = {
   justifyContent: "space-between",
   alignItems: "center",
   backgroundColor: "transparent",
-  paddingRight: "14.6%"
+  paddingRight: "14.6%",
 };
 
 const headerStyle = {
   // display: "flex",
-  paddingLeft: window.innerWidth > breakpoints.tablet ? "15.3vw" : 0
+  paddingLeft: window.innerWidth > breakpoints.tablet ? "15.3vw" : 0,
 };
 
 const tabsstyle = {
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
-  JustifyContent: "space-between"
+  JustifyContent: "space-between",
   // marginRight:'10%'
 };
 
 const liststyle = {
   listStyle: "none",
   marginLeft: "1.2rem",
-  marginRight: "1.2rem"
+  marginRight: "1.2rem",
 };

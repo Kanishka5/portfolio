@@ -24,7 +24,7 @@ import { Element } from "react-scroll";
 const breakpoints = {
   desktop: 1040,
   tablet: 840,
-  mobile: 540
+  mobile: 540,
 };
 
 export default class Intro extends Component {
@@ -38,7 +38,7 @@ export default class Intro extends Component {
             width: window.innerWidth > breakpoints.tablet ? "66%" : "90%",
             marginLeft: window.innerWidth > breakpoints.tablet ? "17%" : "5%",
             marginTop: window.innerWidth > breakpoints.tablet ? "60vh" : "35vh",
-            marginBottom: "20vh"
+            marginBottom: "20vh",
           }}
         >
           <link
@@ -52,7 +52,7 @@ export default class Intro extends Component {
           <div
             style={{
               position: "relative",
-              width: "83%"
+              width: "83%",
             }}
           >
             <div
@@ -60,7 +60,7 @@ export default class Intro extends Component {
                 position: "absolute",
                 width: "100%",
                 textAlign: "left",
-                top: "4.7vh"
+                top: "4.7vh",
               }}
             >
               <p
@@ -69,7 +69,7 @@ export default class Intro extends Component {
                   color: "rgba(52, 58, 64, 0.06)",
                   fontFamily: "Quattrocento Sans, sans-serif",
                   fontSize:
-                    window.innerWidth > breakpoints.tablet ? "4.5rem" : "3rem"
+                    window.innerWidth > breakpoints.tablet ? "4.5rem" : "3rem",
                 }}
               >
                 PROJECTS
@@ -80,7 +80,7 @@ export default class Intro extends Component {
                 position: "absolute",
                 width: "100%",
                 textAlign: "left",
-                top: "10vh"
+                top: "10vh",
               }}
             >
               <p
@@ -88,7 +88,7 @@ export default class Intro extends Component {
                   fontFamily: "Playfair Display, serif",
                   fontWeight: 700,
                   fontSize: "2rem",
-                  color: "#343a40"
+                  color: "#343a40",
                 }}
               >
                 My Projects
@@ -100,7 +100,7 @@ export default class Intro extends Component {
               marginTop:
                 window.innerWidth > breakpoints.tablet ? "10vh" : "20vh",
               Width: "83vw",
-              maxWidth: "100vw"
+              maxWidth: "100vw",
             }}
           >
             <Fade left>
@@ -109,7 +109,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <img alt="btn" src={lib} style={imgStyleLeft} />{" "}
@@ -118,7 +120,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   {/* project 1 */}
@@ -144,7 +148,7 @@ export default class Intro extends Component {
                           ? "absolute"
                           : "static",
                       left: "3vw",
-                      bottom: "-1.8vw"
+                      bottom: "-1.8vw",
                     }}
                   >
                     <a
@@ -160,7 +164,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "16vw"
-                              : 260
+                              : 260,
                         }}
                       />
                     </a>
@@ -171,7 +175,7 @@ export default class Intro extends Component {
             <Fade right>
               <Row
                 style={{
-                  paddingTop: "15vh"
+                  paddingTop: "15vh",
                 }}
               >
                 <Col
@@ -182,7 +186,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   {/* project 2 */}
@@ -191,7 +197,9 @@ export default class Intro extends Component {
                       paddingLeft:
                         window.innerWidth > breakpoints.tablet ? "auto" : "5vw",
                       textAlign:
-                        window.innerWidth > breakpoints.tablet ? "auto" : "left"
+                        window.innerWidth > breakpoints.tablet
+                          ? "auto"
+                          : "left",
                     }}
                   >
                     <h2 style={headStyle}>
@@ -211,7 +219,7 @@ export default class Intro extends Component {
                           ? "absolute"
                           : "static",
                       left: 0,
-                      bottom: "-1.8vw"
+                      bottom: "-1.8vw",
                     }}
                   >
                     <a
@@ -227,7 +235,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "16vw"
-                              : 260
+                              : 260,
                         }}
                       />
                     </a>
@@ -241,7 +249,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <img alt="btn" src={project8} style={imgStyleRight} />{" "}
@@ -254,7 +264,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <img alt="btn" src={project1} style={imgStyleLeft} />{" "}
@@ -263,7 +275,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   {/* project 3 */}
@@ -287,7 +301,7 @@ export default class Intro extends Component {
                           ? "absolute"
                           : "static",
                       left: "3vw",
-                      bottom: "-1.8vw"
+                      bottom: "-1.8vw",
                     }}
                   >
                     <a
@@ -303,7 +317,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "16vw"
-                              : 260
+                              : 260,
                         }}
                       />
                     </a>
@@ -314,7 +328,7 @@ export default class Intro extends Component {
             <Fade right>
               <Row
                 style={{
-                  paddingTop: "15vh"
+                  paddingTop: "15vh",
                 }}
               >
                 <Col
@@ -325,7 +339,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   {/* project 4 */}
@@ -334,7 +350,9 @@ export default class Intro extends Component {
                       paddingLeft:
                         window.innerWidth > breakpoints.tablet ? "auto" : "5vw",
                       textAlign:
-                        window.innerWidth > breakpoints.tablet ? "auto" : "left"
+                        window.innerWidth > breakpoints.tablet
+                          ? "auto"
+                          : "left",
                     }}
                   >
                     <h2 style={headStyle}>
@@ -358,7 +376,7 @@ export default class Intro extends Component {
                           ? "absolute"
                           : "static",
                       left: 0,
-                      bottom: "-1.8vw"
+                      bottom: "-1.8vw",
                     }}
                   >
                     <a
@@ -374,7 +392,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "16vw"
-                              : 260
+                              : 260,
                         }}
                       />
                     </a>
@@ -388,14 +406,17 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <img alt="btn" src={project2} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
             </Fade>
-            <Fade left>
+            {/* project 5 */}
+            {/* <Fade left>
               <Row style={{ paddingTop: "15vh" }}>
                 <Col
                   style={{
@@ -406,7 +427,7 @@ export default class Intro extends Component {
                 >
                   <img alt="btn" src={project3} style={imgStyleLeft} />{" "}
                 </Col>
-                {/* project 5 */}
+                
                 <Col
                   style={{
                     padding: 0,
@@ -461,8 +482,9 @@ export default class Intro extends Component {
                   </Row>
                 </Col>
               </Row>
-            </Fade>
-            <Fade right>
+            </Fade> */}
+            {/* project 6 */}
+            {/* <Fade right>
               <Row style={{ paddingTop: "15vh" }}>
                 <Col
                   xs={{ order: 12 }}
@@ -475,7 +497,7 @@ export default class Intro extends Component {
                       window.innerWidth > breakpoints.tablet ? "auto" : "center"
                   }}
                 >
-                  {/* project 6 */}
+                
                   <Row
                     style={{
                       paddingLeft:
@@ -544,14 +566,16 @@ export default class Intro extends Component {
                   <img alt="btn" src={project4} style={imgStyleRight} />{" "}
                 </Col>
               </Row>
-            </Fade>
+            </Fade> */}
             <Fade left>
               <Row style={{ paddingTop: "15vh" }}>
                 <Col
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <img alt="btn" src={project5} style={imgStyleLeft} />{" "}
@@ -561,7 +585,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <Row style={textdiv}>
@@ -585,7 +611,7 @@ export default class Intro extends Component {
                           ? "absolute"
                           : "static",
                       left: "3vw",
-                      bottom: "-1.8vw"
+                      bottom: "-1.8vw",
                     }}
                   >
                     <a
@@ -601,7 +627,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "20vw"
-                              : 320
+                              : 320,
                         }}
                       />
                     </a>
@@ -618,7 +644,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "20vw"
-                              : 320
+                              : 320,
                         }}
                       />
                     </a>
@@ -636,7 +662,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <Row
@@ -644,7 +672,9 @@ export default class Intro extends Component {
                       paddingLeft:
                         window.innerWidth > breakpoints.tablet ? "auto" : "5vw",
                       textAlign:
-                        window.innerWidth > breakpoints.tablet ? "auto" : "left"
+                        window.innerWidth > breakpoints.tablet
+                          ? "auto"
+                          : "left",
                     }}
                   >
                     <h2 style={headStyle}>Website Design - Aarohan 18</h2>
@@ -665,7 +695,7 @@ export default class Intro extends Component {
                           ? "absolute"
                           : "static",
                       left: 0,
-                      bottom: "-1.8vw"
+                      bottom: "-1.8vw",
                     }}
                   >
                     <a
@@ -681,7 +711,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "16vw"
-                              : 260
+                              : 260,
                         }}
                       />
                     </a>
@@ -695,7 +725,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <img alt="btn" src={project6} style={imgStyleRight} />{" "}
@@ -708,7 +740,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <img alt="btn" src={project7} style={imgStyleLeft} />{" "}
@@ -717,7 +751,9 @@ export default class Intro extends Component {
                   style={{
                     padding: 0,
                     textAlign:
-                      window.innerWidth > breakpoints.tablet ? "auto" : "center"
+                      window.innerWidth > breakpoints.tablet
+                        ? "auto"
+                        : "center",
                   }}
                 >
                   <Row style={textdiv}>
@@ -740,7 +776,7 @@ export default class Intro extends Component {
                           ? "absolute"
                           : "static",
                       left: "3vw",
-                      bottom: "-1.8vw"
+                      bottom: "-1.8vw",
                     }}
                   >
                     <a
@@ -756,7 +792,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "20vw"
-                              : 320
+                              : 320,
                         }}
                       />
                     </a>
@@ -773,7 +809,7 @@ export default class Intro extends Component {
                           width:
                             window.innerWidth > breakpoints.tablet
                               ? "20vw"
-                              : 320
+                              : 320,
                         }}
                       />
                     </a>
@@ -790,7 +826,7 @@ export default class Intro extends Component {
 
 const textdiv = {
   paddingLeft: window.innerWidth > breakpoints.tablet ? "3vw" : "5vw",
-  textAlign: window.innerWidth > breakpoints.tablet ? "auto" : "left"
+  textAlign: window.innerWidth > breakpoints.tablet ? "auto" : "left",
 };
 
 const paraStyle2 = {
@@ -800,7 +836,7 @@ const paraStyle2 = {
   fontSize: window.innerWidth > breakpoints.tablet ? "1.05vw" : "1rem",
   lineHeight: window.innerWidth > breakpoints.tablet ? "1.7vw" : "1.55rem",
   maxWidth: "90%",
-  color: "#4a4a4a"
+  color: "#4a4a4a",
 };
 
 const paraStyle1 = {
@@ -810,21 +846,21 @@ const paraStyle1 = {
   fontSize: window.innerWidth > breakpoints.tablet ? "1.05vw" : "1rem",
   lineHeight: window.innerWidth > breakpoints.tablet ? "1.7vw" : "1.55rem",
   maxWidth: window.innerWidth > breakpoints.tablet ? "auto" : "90%",
-  color: "#4a4a4a"
+  color: "#4a4a4a",
 };
 
 const headStyle = {
   fontFamily: "Playfair Display, serif",
   fontWeight: 700,
   fontSize: window.innerWidth > breakpoints.tablet ? "1.7vw" : "1.5rem",
-  paddingTop: window.innerWidth > breakpoints.tablet ? 0 : "2rem"
+  paddingTop: window.innerWidth > breakpoints.tablet ? 0 : "2rem",
 };
 
 const imgStyleLeft = {
-  width: window.innerWidth > breakpoints.tablet ? "27.2vw" : "90vw"
+  width: window.innerWidth > breakpoints.tablet ? "27.2vw" : "90vw",
 };
 
 const imgStyleRight = {
   width: window.innerWidth > breakpoints.tablet ? "27.2vw" : "90vw",
-  marginLeft: window.innerWidth > breakpoints.tablet ? "6vw" : 0
+  marginLeft: window.innerWidth > breakpoints.tablet ? "6vw" : 0,
 };
